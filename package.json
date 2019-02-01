@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "migrations-generate": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "contentful": "^7.1.0",
+    "contentful-cli": "^0.18.0",
     "dotenv": "^6.2.0"
   }
 }

@@ -25,9 +25,9 @@ client.getContentTypes().then(contentTypes => {
     for (const contentType of contentTypes.items) {
       let contentTypeId = contentType.sys.id;
       await execMe(
-        `contentful space generate migration --space-id ${
-          process.env.space_id
-        } --environment-id master --content-type-id ${contentTypeId} --filename migrations/${contentTypeId}.js`,
+        `contentful space generate migration --space-id ${process.env.space_id} --environment-id ${
+          process.env.space_env
+        } --content-type-id ${contentTypeId} --filename migrations/${contentTypeId}.js`,
         contentTypeId
       );
     }
