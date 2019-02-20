@@ -1,9 +1,9 @@
 require('dotenv').config();
 
-var contentful = require('contentful');
-var exec = require('child_process').exec;
+const contentful = require('contentful');
+const { exec } = require('child_process');
 
-var client = contentful.createClient({
+const client = contentful.createClient({
   space: process.env.space_id,
   accessToken: process.env.access_token,
   environment: process.env.space_env
