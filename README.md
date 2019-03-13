@@ -1,4 +1,4 @@
-# Contentful migration generator
+# Contentful migration/content export generator
 
 Creates a base set of migrations based on your Contentful content models. A single migration file will be added to the `/migrations` folder for each content model.
 
