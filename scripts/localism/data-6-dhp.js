@@ -2068,7 +2068,6 @@ module.exports = [
 	{
 	shortCode: "E07000075",
 	phone: "01702 318 197",
-	email: "revenues&benefits@rochford.gov.uk",
 	text: "To apply for a DHP please complete this 12 page form and return it to:\n\nRochford Council\nRevenues and benefits\nCouncil Offices\nSouth Street\nRochford\nEssex, SS4 1BW \n\n\nIt should take approximately 60 minutes to complete the form. If you need assistance in completing your form please contact  01702 318197 or 01702 318198",
 	webLink: "https://www.rochford.gov.uk/benefits/financial-help-and-money-advice",
 	documentDownload: "6500/rochford_dhp_2019.pdf",
