@@ -5,14 +5,16 @@ const { richTextFromMarkdown } = require("@contentful/rich-text-from-markdown");
 
 const MAX_TO_IMPORT = 100000;
 
+const siteRegExpFilter = new RegExp(process.env.shortCodeRegExp)
+
 /**
  * Load the Data
  */
-const lwa = require("./data-3-lwa");
-const councilHousing = require("./data-4-council-housing");
-const homelessness = require("./data-5-homelessness");
-const dhp = require("./data-6-dhp");
-const councils = require('./data-councils')
+const lwa = require("./data-3-lwa").filter(a => siteRegExpFilter.test(a.shortCode));
+const councilHousing = require("./data-4-council-housing").filter(a => siteRegExpFilter.test(a.shortCode));
+const homelessness = require("./data-5-homelessness").filter(a => siteRegExpFilter.test(a.shortCode));
+const dhp = require("./data-6-dhp").filter(a => siteRegExpFilter.test(a.shortCode));
+const councils = require('./data-councils').filter(a => siteRegExpFilter.test(a.shortCode))
 
 const client = contentful.createClient({
   space: process.env.space_id,
@@ -379,7 +381,6 @@ client
   .getSpace(process.env.space_id)
   .then((space) => space.getEnvironment(process.env.space_env))
   .then(async (environment) => {
-
 
     const councilMap = await processCouncils(environment)
 
