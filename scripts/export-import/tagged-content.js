@@ -158,6 +158,6 @@ const foo = async (env, assetToAdd) => {
 
   console.log("All done");
   console.log(
-    `Now go to the Contentful env you have imported this content to (${IMPORT_TO_ENV} in ${SPACE_ID}) check the content created or and updated`
+    `Now go to the Contentful env you have imported this content to (${IMPORT_TO_ENV} in ${SPACE_ID}) check the content that has been created or updated and publish as required`
   );
 })();
