@@ -1,11 +1,12 @@
 require("dotenv").config();
 const contentful = require("contentful-management");
 
-//Todo: source from env file
+// Todo: source from env file
+// Todo: add check/warning or interactive prompt if adding to master env
+const SPACE_ID = "";
 const EXPORT_FROM_ENV = "";
 const IMPORT_TO_ENV = "";
 const ACCESS_TOKEN = "";
-const SPACE_ID = "";
 
 const client = contentful.createClient({
   accessToken: ACCESS_TOKEN,
@@ -157,6 +158,6 @@ const foo = async (env, assetToAdd) => {
 
   console.log("All done");
   console.log(
-    `Now go to the Contentful env you have imported this content to (${IMPORT_TO_ENV} in ${SPACE_ID}) check the `
+    `Now go to the Contentful env you have imported this content to (${IMPORT_TO_ENV} in ${SPACE_ID}) check the content created or and updated`
   );
 })();
