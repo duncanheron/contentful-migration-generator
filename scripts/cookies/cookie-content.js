@@ -9,16 +9,8 @@ const contentful = require("contentful-management");
  * Scotland content.
  */
 
-const engClient = contentful.createClient({
-  space: process.env.space_id,
+const client = contentful.createClient({
   accessToken: process.env.access_token,
-  environment: process.env.space_env,
-});
-
-const scotClient = contentful.createClient({
-  space: process.env.space_id_scotland,
-  accessToken: process.env.access_token,
-  environment: process.env.space_env,
 });
 
 // England cookie table ids
@@ -44,7 +36,7 @@ let scot_an;
 let scot_ma;
 
 const getEngContent = async () => {
-  engClient
+  client
     .getSpace(process.env.space_id)
     .then((space) => space.getEnvironment(process.env.space_env))
     .then(async (environment) => {
@@ -62,7 +54,7 @@ const getEngContent = async () => {
 };
 
 const updateScotContent = async () => {
-  scotClient
+  client
     .getSpace(process.env.space_id_scotland)
     .then((space) => space.getEnvironment(process.env.space_env_scotland))
     .then(async (environment) => {
