@@ -7,12 +7,13 @@ const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
 const CONTENTFUL_ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT;
 const PAGE_CONTENT_TYPE = "pageCourse";
 const DATA_CONTENT_TYPE = "dataCourse";
+const META_INFO_TYPE = "topicPageMetaInformation";
 const GRAPHQL_ENDPOINT = "http://localhost:8000/__graphql";
 
 const createMetaInfo = async (environment, templateName) => {
   try {
     const metainfoEntry = await environment.createEntry(
-      "topicPageMetaInformation",
+      META_INFO_TYPE,
       {
         fields: {
           systemName: { "en-GB": templateName },
