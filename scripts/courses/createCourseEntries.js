@@ -9,6 +9,76 @@ const PAGE_CONTENT_TYPE = "pageCourse";
 const DATA_CONTENT_TYPE = "dataCourse";
 const GRAPHQL_ENDPOINT = "http://localhost:8000/__graphql";
 
+const createMetaInfo = async (environment, templateName) => {
+  try {
+    const metainfoEntry = await environment.createEntry(
+      "topicPageMetaInformation",
+      {
+        fields: {
+          systemName: { "en-GB": templateName },
+          seoDescription: { "en-GB": `SEO description for ${templateName}` },
+          shortDescription: {
+            "en-GB": `Short description for ${templateName}`,
+          },
+        },
+      }
+    );
+
+    console.log(`Created topicPageMetaInformation entry for ${templateName}`);
+    return metainfoEntry;
+  } catch (error) {
+    throw new Error(
+      `Error creating topicPageMetaInformation entry for ${templateName}: ${error.message}`
+    );
+  }
+};
+
+const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metainfoEntry) => {
+  try {
+    const {
+      fields: {
+        title,
+      },
+    } = pageEntry;
+
+    if (!dataEntry || !metainfoEntry) {
+      throw new Error(`Cannot link empty data or topic entry for ${title["en-GB"]}`);
+    }
+
+    // Link dataCourse to pageCourse
+    if (!pageEntry.fields.course) {
+      pageEntry.fields.course = {};
+    }
+
+    pageEntry.fields.course["en-GB"] = {
+      sys: {
+        type: "Link",
+        linkType: "Entry",
+        id: dataEntry.sys.id,
+      },
+    };
+
+    // Link topicPageMetaInformation to pageCourse
+    if (!pageEntry.fields.pageInformation) {
+      pageEntry.fields.pageInformation = {};
+    }
+
+    pageEntry.fields.pageInformation["en-GB"] = {
+      sys: {
+        type: "Link",
+        linkType: "Entry",
+        id: metainfoEntry.sys.id,
+      },
+    };
+
+    await pageEntry.update();
+
+    console.log(`Linked dataCourse and topicPageMetaInformation to pageCourse entry: ${title["en-GB"]}`);
+  } catch (error) {
+    throw new Error(`Error linking dataCourse and topicPageMetaInformation to pageCourse entry: ${error.message}`);
+  }
+};
+
 const fetchExistingEntries = async (environment) => {
   try {
     const existingPageEntries = await environment.getEntries({
@@ -46,6 +116,7 @@ const createPageEntry = async (environment, templateName, templateIdString) => {
   }
 };
 
+
 const createDataEntry = async (environment, title, templateIdString) => {
   try {
     const dataEntry = await environment.createEntry(DATA_CONTENT_TYPE, {
@@ -71,112 +142,62 @@ const createEntries = async (courses) => {
     const space = await client.getSpace(CONTENTFUL_SPACE_ID);
     const environment = await space.getEnvironment(CONTENTFUL_ENVIRONMENT);
 
-    const {
-      existingPageEntries,
-      existingDataEntries,
-    } = await fetchExistingEntries(environment);
+    if (space === 'master') {
+      console.log("Attempting to update entries on master env, are you sure?");
+      return
+    }
 
-    const existingPageSlugs =
-      existingPageEntries?.items?.map((entry) => entry.fields.slug["en-GB"]) ??
-      [];
+    const { existingPageEntries, existingDataEntries } = await fetchExistingEntries(environment);
 
-    const existingTemplateIdStrings =
-      existingDataEntries?.items?.map(
-        (entry) => entry.fields.templateIdString["en-GB"]
-      ) ?? [];
+    const existingPageSlugs = existingPageEntries?.items?.map((entry) => entry.fields.slug["en-GB"]) ?? [];
+    const existingTemplateIdStrings = existingDataEntries?.items?.map((entry) => entry.fields.templateIdString["en-GB"]) ?? [];
 
-    const pageCreationPromises = courses.map(async (course) => {
+    for (const course of courses) {
       const { templateName, templateIdString } = course;
-
-      if (existingPageSlugs.includes(templateIdString)) {
+  
+      if (existingPageSlugs.includes(templateIdString) || existingTemplateIdStrings.includes(templateIdString)) {
         console.log(
-          `Page entry with slug "${templateIdString}" already exists. Skipping.`
+          `Entry with templateIdString "${templateIdString}" already exists. Skipping.`
         );
-        return null;
+        continue;
       }
-
+  
       try {
-        return await createPageEntry(
+        const pageEntry = await createPageEntry(
           environment,
           templateName,
           templateIdString
         );
+  
+        const dataEntry = await createDataEntry(
+          environment,
+          templateName,
+          templateIdString
+        );
+  
+        const metainfoEntry = await createMetaInfo(
+          environment,
+          templateName
+        );
+  
+        await linkDataAndTopicToPageCourse(
+          pageEntry,
+          dataEntry,
+          metainfoEntry
+        );
+  
       } catch (error) {
         console.error(
-          `Error creating page entry for ${templateName}: ${error.message}`
+          `Error creating/linking entries for ${templateName}: ${error.message}`
         );
-        return null;
       }
-    });
-
-    const createdPageEntries = (await Promise.all(pageCreationPromises)).filter(
-      (entry) => entry !== null
-    );
-
-    console.log("All page entries created.");
-
-    const dataCreationPromises = [];
-
-    for (const pageEntry of createdPageEntries) {
-      const {
-        fields: {
-          slug: { "en-GB": templateIdString },
-          title,
-        },
-      } = pageEntry;
-
-      if (existingTemplateIdStrings.includes(templateIdString)) {
-        console.log(
-          `Data entry with templateIdString "${templateIdString}" already exists. Skipping.`
-        );
-        continue;
-      }
-
-      const dataCreationPromise = createDataEntry(
-        environment,
-        title["en-GB"],
-        templateIdString
-      );
-      dataCreationPromises.push(dataCreationPromise);
     }
-
-    const createdDataEntries = await Promise.all(dataCreationPromises);
-
-    for (let i = 0; i < createdPageEntries.length; i++) {
-      const pageEntry = createdPageEntries[i];
-      const dataEntry = createdDataEntries[i];
-
-      const {
-        sys: { id: pageCourseId },
-      } = pageEntry;
-
-      const pageCourse = await environment.getEntry(pageCourseId);
-
-      if (!pageCourse.fields.course) {
-        pageCourse.fields.course = {};
-      }
-
-      pageCourse.fields.course["en-GB"] = {
-        sys: {
-          type: "Link",
-          linkType: "Entry",
-          id: dataEntry.sys.id,
-        },
-      };
-
-      await pageCourse.update();
-
-      console.log(
-        `Linked dataCourse entry to pageCourse entry: ${pageEntry.fields.title["en-GB"]}`
-      );
-    }
-
-    console.log("All dataCourse entries linked to pageCourse entries.");
+  
+    console.log("All entries created and linked.");
   } catch (error) {
-    console.error(`Error creating/linking entries: ${error.message}`);
+    console.error(`Error creating entries: ${error.message}`);
   }
 };
-
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
