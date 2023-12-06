@@ -12,7 +12,7 @@ const GRAPHQL_ENDPOINT = "http://localhost:8000/__graphql";
 
 const createMetaInfo = async (environment, templateName) => {
   try {
-    const metainfoEntry = await environment.createEntry(
+    const metaInfoEntry = await environment.createEntry(
       META_INFO_TYPE,
       {
         fields: {
@@ -26,7 +26,7 @@ const createMetaInfo = async (environment, templateName) => {
     );
 
     console.log(`Created topicPageMetaInformation entry for ${templateName}`);
-    return metainfoEntry;
+    return metaInfoEntry;
   } catch (error) {
     throw new Error(
       `Error creating topicPageMetaInformation entry for ${templateName}: ${error.message}`
@@ -34,7 +34,7 @@ const createMetaInfo = async (environment, templateName) => {
   }
 };
 
-const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metainfoEntry) => {
+const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metaInfoEntry) => {
   try {
     const {
       fields: {
@@ -42,7 +42,7 @@ const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metainfoEntry)
       },
     } = pageEntry;
 
-    if (!dataEntry || !metainfoEntry) {
+    if (!dataEntry || !metaInfoEntry) {
       throw new Error(`Cannot link empty data or topic entry for ${title["en-GB"]}`);
     }
 
@@ -68,7 +68,7 @@ const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metainfoEntry)
       sys: {
         type: "Link",
         linkType: "Entry",
-        id: metainfoEntry.sys.id,
+        id: metaInfoEntry.sys.id,
       },
     };
 
@@ -176,7 +176,7 @@ const createEntries = async (courses) => {
           templateIdString
         );
   
-        const metainfoEntry = await createMetaInfo(
+        const metaInfoEntry = await createMetaInfo(
           environment,
           templateName
         );
@@ -184,7 +184,7 @@ const createEntries = async (courses) => {
         await linkDataAndTopicToPageCourse(
           pageEntry,
           dataEntry,
-          metainfoEntry
+          metaInfoEntry
         );
   
       } catch (error) {
