@@ -32,10 +32,6 @@ const linkDataAndTopicToPageCourse = async (
       fields: { title },
     } = pageEntry;
 
-    console.log("Page Entry:", pageEntry);
-    console.log("Data Entry:", dataEntry);
-    console.log("Meta Info Entry:", metaInfoEntry);
-
     if (!dataEntry || !metaInfoEntry) {
       throw new Error(
         `Cannot link empty data or topic entry for ${title["en-GB"]}`
@@ -116,24 +112,16 @@ const createEntries = async (courses) => {
       existingDataEntries,
     } = await fetchExistingEntries(environment);
 
-    // console.log(existingDataEntries);
-    console.log(existingPageEntries.items[0].fields);
-
-    // const existingPageSlugs =
-    //   existingPageEntries?.items?.map((entry) => entry.fields.slug["en-GB"]) ??
-    //   [];
-
     const existingPageSlugs =
       existingPageEntries?.items?.map(
         (entry) => entry.fields.slug?.["en-GB"] ?? undefined
       ) ?? [];
 
-    console.log(existingPageSlugs);
     const existingTemplateIdStrings =
       existingDataEntries?.items?.map(
         (entry) => entry.fields.templateIdString["en-GB"] ?? undefined
       ) ?? [];
-    console.log(existingTemplateIdStrings);
+
     for (const course of courses) {
       const { templateName, templateIdString } = course;
 
