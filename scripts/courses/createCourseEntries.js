@@ -10,43 +10,38 @@ const DATA_CONTENT_TYPE = "dataCourse";
 const META_INFO_TYPE = "topicPageMetaInformation";
 const GRAPHQL_ENDPOINT = "http://localhost:8000/__graphql";
 
-const createMetaInfo = async (environment, templateName) => {
+const createContentfulEntry = async (environment, contentType, fields) => {
   try {
-    const metaInfoEntry = await environment.createEntry(
-      META_INFO_TYPE,
-      {
-        fields: {
-          systemName: { "en-GB": templateName },
-          seoDescription: { "en-GB": `SEO description for ${templateName}` },
-          shortDescription: {
-            "en-GB": `Short description for ${templateName}`,
-          },
-        },
-      }
-    );
-
-    console.log(`Created topicPageMetaInformation entry for ${templateName}`);
-    return metaInfoEntry;
+    const entry = await environment.createEntry(contentType, fields);
+    console.log(`Created entry for ${contentType}`);
+    return entry;
   } catch (error) {
     throw new Error(
-      `Error creating topicPageMetaInformation entry for ${templateName}: ${error.message}`
+      `Error creating entry for ${contentType}: ${error.message}`
     );
   }
 };
 
-const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metaInfoEntry) => {
+const linkDataAndTopicToPageCourse = async (
+  pageEntry,
+  dataEntry,
+  metaInfoEntry
+) => {
   try {
     const {
-      fields: {
-        title,
-      },
+      fields: { title },
     } = pageEntry;
 
+    console.log("Page Entry:", pageEntry);
+    console.log("Data Entry:", dataEntry);
+    console.log("Meta Info Entry:", metaInfoEntry);
+
     if (!dataEntry || !metaInfoEntry) {
-      throw new Error(`Cannot link empty data or topic entry for ${title["en-GB"]}`);
+      throw new Error(
+        `Cannot link empty data or topic entry for ${title["en-GB"]}`
+      );
     }
 
-    // Link dataCourse to pageCourse
     if (!pageEntry.fields.course) {
       pageEntry.fields.course = {};
     }
@@ -59,7 +54,6 @@ const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metaInfoEntry)
       },
     };
 
-    // Link topicPageMetaInformation to pageCourse
     if (!pageEntry.fields.pageInformation) {
       pageEntry.fields.pageInformation = {};
     }
@@ -74,9 +68,13 @@ const linkDataAndTopicToPageCourse = async (pageEntry, dataEntry, metaInfoEntry)
 
     await pageEntry.update();
 
-    console.log(`Linked dataCourse and topicPageMetaInformation to pageCourse entry: ${title["en-GB"]}`);
+    console.log(
+      `Linked dataCourse and topicPageMetaInformation to pageCourse entry: ${title["en-GB"]}`
+    );
   } catch (error) {
-    throw new Error(`Error linking dataCourse and topicPageMetaInformation to pageCourse entry: ${error.message}`);
+    throw new Error(
+      `Error linking dataCourse and topicPageMetaInformation to pageCourse entry: ${error.message}`
+    );
   }
 };
 
@@ -99,41 +97,6 @@ const fetchExistingEntries = async (environment) => {
   }
 };
 
-const createPageEntry = async (environment, templateName, templateIdString) => {
-  try {
-    const pageEntry = await environment.createEntry(PAGE_CONTENT_TYPE, {
-      fields: {
-        title: { "en-GB": templateName },
-        slug: { "en-GB": templateIdString },
-      },
-    });
-
-    console.log(`Created page entry for ${templateName}`);
-    return pageEntry;
-  } catch (error) {
-    throw new Error(
-      `Error creating page entry for ${templateName}: ${error.message}`
-    );
-  }
-};
-
-
-const createDataEntry = async (environment, title, templateIdString) => {
-  try {
-    const dataEntry = await environment.createEntry(DATA_CONTENT_TYPE, {
-      fields: {
-        name: { "en-GB": title },
-        templateIdString: { "en-GB": templateIdString },
-      },
-    });
-
-    console.log(`Created data entry for ${title}`);
-    return dataEntry;
-  } catch (error) {
-    throw new Error(`Error creating data entry for ${title}: ${error.message}`);
-  }
-};
-
 const createEntries = async (courses) => {
   const client = contentful.createClient({
     accessToken: CONTENTFUL_MANAGEMENT_TOKEN,
@@ -143,58 +106,94 @@ const createEntries = async (courses) => {
     const space = await client.getSpace(CONTENTFUL_SPACE_ID);
     const environment = await space.getEnvironment(CONTENTFUL_ENVIRONMENT);
 
-    if (space === 'master') {
+    if (space === "master") {
       console.log("Attempting to update entries on master env, are you sure?");
-      return
+      return;
     }
 
-    const { existingPageEntries, existingDataEntries } = await fetchExistingEntries(environment);
+    const {
+      existingPageEntries,
+      existingDataEntries,
+    } = await fetchExistingEntries(environment);
 
-    const existingPageSlugs = existingPageEntries?.items?.map((entry) => entry.fields.slug["en-GB"]) ?? [];
-    const existingTemplateIdStrings = existingDataEntries?.items?.map((entry) => entry.fields.templateIdString["en-GB"]) ?? [];
+    // console.log(existingDataEntries);
+    console.log(existingPageEntries.items[0].fields);
 
+    // const existingPageSlugs =
+    //   existingPageEntries?.items?.map((entry) => entry.fields.slug["en-GB"]) ??
+    //   [];
+
+    const existingPageSlugs =
+      existingPageEntries?.items?.map(
+        (entry) => entry.fields.slug?.["en-GB"] ?? undefined
+      ) ?? [];
+
+    console.log(existingPageSlugs);
+    const existingTemplateIdStrings =
+      existingDataEntries?.items?.map(
+        (entry) => entry.fields.templateIdString["en-GB"] ?? undefined
+      ) ?? [];
+    console.log(existingTemplateIdStrings);
     for (const course of courses) {
       const { templateName, templateIdString } = course;
-  
-      if (existingPageSlugs.includes(templateIdString) || existingTemplateIdStrings.includes(templateIdString)) {
+
+      if (
+        existingPageSlugs.includes(templateIdString) ||
+        existingTemplateIdStrings.includes(templateIdString)
+      ) {
         console.log(
           `Entry with templateIdString "${templateIdString}" already exists. Skipping.`
         );
         continue;
       }
-  
+
       try {
-        const pageEntry = await createPageEntry(
+        const pageEntry = await createContentfulEntry(
           environment,
-          templateName,
-          templateIdString
+          PAGE_CONTENT_TYPE,
+          {
+            fields: {
+              title: { "en-GB": templateName },
+              slug: { "en-GB": templateIdString },
+            },
+          }
         );
-  
-        const dataEntry = await createDataEntry(
+
+        const dataEntry = await createContentfulEntry(
           environment,
-          templateName,
-          templateIdString
+          DATA_CONTENT_TYPE,
+          {
+            fields: {
+              name: { "en-GB": templateName },
+              templateIdString: { "en-GB": templateIdString },
+            },
+          }
         );
-  
-        const metaInfoEntry = await createMetaInfo(
+
+        const metaInfoEntry = await createContentfulEntry(
           environment,
-          templateName
+          META_INFO_TYPE,
+          {
+            fields: {
+              systemName: { "en-GB": templateName },
+              seoDescription: {
+                "en-GB": `SEO description for ${templateName}`,
+              },
+              shortDescription: {
+                "en-GB": `Short description for ${templateName}`,
+              },
+            },
+          }
         );
-  
-        await linkDataAndTopicToPageCourse(
-          pageEntry,
-          dataEntry,
-          metaInfoEntry
-        );
-  
+
+        await linkDataAndTopicToPageCourse(pageEntry, dataEntry, metaInfoEntry);
       } catch (error) {
         console.error(
           `Error creating/linking entries for ${templateName}: ${error.message}`
         );
       }
     }
-  
-    console.log("All entries created and linked.");
+
   } catch (error) {
     console.error(`Error creating entries: ${error.message}`);
   }
@@ -203,7 +202,6 @@ const createEntries = async (courses) => {
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const createEntriesInBatches = async (courses) => {
-  // These numbers are quite conservative yet we still see some warnings in the console
   const batchSize = 10;
   const delayBetweenBatches = 2000;
 
