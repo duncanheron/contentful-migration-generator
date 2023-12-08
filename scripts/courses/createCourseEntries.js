@@ -12,6 +12,7 @@ const GRAPHQL_ENDPOINT = "http://localhost:8000/__graphql";
 
 let environment;
 
+// Initialises the CMA and sets the environment in the top scope
 const initCMA = async () => {
   const client = contentful.createClient({
     accessToken: CONTENTFUL_MANAGEMENT_TOKEN,
@@ -32,6 +33,7 @@ const createContentfulEntry = async (contentType, fields) => {
   }
 };
 
+// Takes page, data, and meta info entries and links them together within the page entry's fields.
 const linkDataAndTopicToPageCourse = async (
   pageEntry,
   dataEntry,
@@ -48,10 +50,12 @@ const linkDataAndTopicToPageCourse = async (
       );
     }
 
+    // If the course field isn't found, set it to be an empty object
     if (!pageEntry.fields.course) {
       pageEntry.fields.course = {};
     }
 
+    // Link the data - course entry
     pageEntry.fields.course["en-GB"] = {
       sys: {
         type: "Link",
@@ -60,10 +64,12 @@ const linkDataAndTopicToPageCourse = async (
       },
     };
 
+    // If the meta info field isn't found, set it to be an empty object
     if (!pageEntry.fields.pageInformation) {
       pageEntry.fields.pageInformation = {};
     }
 
+    // Link the component - topicPageMetaInformation
     pageEntry.fields.pageInformation["en-GB"] = {
       sys: {
         type: "Link",
@@ -84,9 +90,10 @@ const linkDataAndTopicToPageCourse = async (
   }
 };
 
+// Retrieves all existing entries for page and data content types using pagination and returns the accumulated entries.
 const fetchExistingEntries = async () => {
   try {
-    const limit = 100; // Maximum number of items per request
+    const limit = 100;
     let skip = 0;
     let allPageEntries = [];
     let allDataEntries = [];
@@ -108,11 +115,11 @@ const fetchExistingEntries = async () => {
       allDataEntries.push(...dataEntries.items);
       skip += limit;
 
+      // Break the loop if either pageEntries or dataEntries is less than the limit
       if (
         pageEntries.items.length < limit ||
         dataEntries.items.length < limit
       ) {
-        // Break the loop if either pageEntries or dataEntries is less than the limit
         break;
       }
     }
@@ -125,30 +132,26 @@ const fetchExistingEntries = async () => {
   }
 };
 
+// Compares the provided courses with existing entries and creates new entries only if they don't already exist.
 const createEntries = async (courses) => {
-  const client = contentful.createClient({
-    accessToken: CONTENTFUL_MANAGEMENT_TOKEN,
-  });
-
   try {
-    const space = await client.getSpace(CONTENTFUL_SPACE_ID);
-    const environment = await space.getEnvironment(CONTENTFUL_ENVIRONMENT);
-
     const {
       existingPageEntries,
       existingDataEntries,
     } = await fetchExistingEntries();
 
+    // Extracts the 'slug' field values from existing page entries and creates an array of slugs.
+    // Defaults to an empty array if no slugs are found
     const existingPageSlugs =
       existingPageEntries?.map((entry) => entry.fields.slug?.["en-GB"]) ?? [];
-    console.log(existingPageSlugs);
 
+    // As existingPageSlugs but for the data entry's templateIdString value
     const existingTemplateIdStrings =
       existingDataEntries?.map(
         (entry) => entry.fields.templateIdString?.["en-GB"]
       ) ?? [];
 
-    console.log(existingTemplateIdStrings);
+    // Loop through the courses, check if an entry with the slug or templateIdString exists, create an entry if it does not
     for (const course of courses) {
       const { templateName, templateIdString } = course;
 
@@ -205,6 +208,8 @@ const createEntries = async (courses) => {
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+
+// Calls createEntries 10 entries at a time to avoid rate limits
 const createEntriesInBatches = async (courses) => {
   const batchSize = 10;
   const delayBetweenBatches = 2000;
@@ -221,6 +226,8 @@ const createEntriesInBatches = async (courses) => {
   }
 };
 
+
+// Fetches the data from the grapql endpoint
 const fetchData = async () => {
   try {
     await initCMA();
