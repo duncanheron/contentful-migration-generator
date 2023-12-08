@@ -10,7 +10,17 @@ const DATA_CONTENT_TYPE = "dataCourse";
 const META_INFO_TYPE = "topicPageMetaInformation";
 const GRAPHQL_ENDPOINT = "http://localhost:8000/__graphql";
 
-const createContentfulEntry = async (environment, contentType, fields) => {
+let environment;
+
+const initCMA = async () => {
+  const client = contentful.createClient({
+    accessToken: CONTENTFUL_MANAGEMENT_TOKEN,
+  });
+  const space = await client.getSpace(CONTENTFUL_SPACE_ID);
+  environment = await space.getEnvironment(CONTENTFUL_ENVIRONMENT);
+};
+
+const createContentfulEntry = async (contentType, fields) => {
   try {
     const entry = await environment.createEntry(contentType, fields);
     console.log(`Created entry for ${contentType}`);
@@ -74,19 +84,41 @@ const linkDataAndTopicToPageCourse = async (
   }
 };
 
-const fetchExistingEntries = async (environment) => {
+const fetchExistingEntries = async () => {
   try {
-    const existingPageEntries = await environment.getEntries({
-      content_type: PAGE_CONTENT_TYPE,
-    });
+    const limit = 100; // Maximum number of items per request
+    let skip = 0;
+    let allPageEntries = [];
+    let allDataEntries = [];
 
-    const existingDataEntries = await environment.getEntries({
-      content_type: DATA_CONTENT_TYPE,
-    });
+    while (true) {
+      const pageEntries = await environment.getEntries({
+        content_type: PAGE_CONTENT_TYPE,
+        skip: skip,
+        limit: limit,
+      });
 
+      const dataEntries = await environment.getEntries({
+        content_type: DATA_CONTENT_TYPE,
+        skip: skip,
+        limit: limit,
+      });
+
+      allPageEntries.push(...pageEntries.items);
+      allDataEntries.push(...dataEntries.items);
+      skip += limit;
+
+      if (
+        pageEntries.items.length < limit ||
+        dataEntries.items.length < limit
+      ) {
+        // Break the loop if either pageEntries or dataEntries is less than the limit
+        break;
+      }
+    }
     return {
-      existingPageEntries,
-      existingDataEntries,
+      existingPageEntries: allPageEntries,
+      existingDataEntries: allDataEntries,
     };
   } catch (error) {
     throw new Error(`Error fetching existing entries: ${error.message}`);
@@ -102,26 +134,21 @@ const createEntries = async (courses) => {
     const space = await client.getSpace(CONTENTFUL_SPACE_ID);
     const environment = await space.getEnvironment(CONTENTFUL_ENVIRONMENT);
 
-    if (space === "master") {
-      console.log("Attempting to update entries on master env, are you sure?");
-      return;
-    }
-
     const {
       existingPageEntries,
       existingDataEntries,
-    } = await fetchExistingEntries(environment);
+    } = await fetchExistingEntries();
 
     const existingPageSlugs =
-      existingPageEntries?.items?.map(
-        (entry) => entry.fields.slug?.["en-GB"] ?? undefined
-      ) ?? [];
+      existingPageEntries?.map((entry) => entry.fields.slug?.["en-GB"]) ?? [];
+    console.log(existingPageSlugs);
 
     const existingTemplateIdStrings =
-      existingDataEntries?.items?.map(
-        (entry) => entry.fields.templateIdString["en-GB"] ?? undefined
+      existingDataEntries?.map(
+        (entry) => entry.fields.templateIdString?.["en-GB"]
       ) ?? [];
 
+    console.log(existingTemplateIdStrings);
     for (const course of courses) {
       const { templateName, templateIdString } = course;
 
@@ -136,43 +163,31 @@ const createEntries = async (courses) => {
       }
 
       try {
-        const pageEntry = await createContentfulEntry(
-          environment,
-          PAGE_CONTENT_TYPE,
-          {
-            fields: {
-              title: { "en-GB": templateName },
-              slug: { "en-GB": templateIdString },
-            },
-          }
-        );
+        const pageEntry = await createContentfulEntry(PAGE_CONTENT_TYPE, {
+          fields: {
+            title: { "en-GB": templateName },
+            slug: { "en-GB": templateIdString },
+          },
+        });
 
-        const dataEntry = await createContentfulEntry(
-          environment,
-          DATA_CONTENT_TYPE,
-          {
-            fields: {
-              name: { "en-GB": templateName },
-              templateIdString: { "en-GB": templateIdString },
-            },
-          }
-        );
+        const dataEntry = await createContentfulEntry(DATA_CONTENT_TYPE, {
+          fields: {
+            name: { "en-GB": templateName },
+            templateIdString: { "en-GB": templateIdString },
+          },
+        });
 
-        const metaInfoEntry = await createContentfulEntry(
-          environment,
-          META_INFO_TYPE,
-          {
-            fields: {
-              systemName: { "en-GB": templateName },
-              seoDescription: {
-                "en-GB": `SEO description for ${templateName}`,
-              },
-              shortDescription: {
-                "en-GB": `Short description for ${templateName}`,
-              },
+        const metaInfoEntry = await createContentfulEntry(META_INFO_TYPE, {
+          fields: {
+            systemName: { "en-GB": templateName },
+            seoDescription: {
+              "en-GB": `SEO description for ${templateName}`,
             },
-          }
-        );
+            shortDescription: {
+              "en-GB": `Short description for ${templateName}`,
+            },
+          },
+        });
 
         await linkDataAndTopicToPageCourse(pageEntry, dataEntry, metaInfoEntry);
       } catch (error) {
@@ -182,6 +197,7 @@ const createEntries = async (courses) => {
       }
     }
 
+    console.log("All entries created and linked.");
   } catch (error) {
     console.error(`Error creating entries: ${error.message}`);
   }
@@ -206,6 +222,12 @@ const createEntriesInBatches = async (courses) => {
 };
 
 const fetchData = async () => {
+  try {
+    await initCMA();
+  } catch (error) {
+    console.error(`Couldn't initialise CMA: ${error}`);
+  }
+
   try {
     const query = `
       query {
