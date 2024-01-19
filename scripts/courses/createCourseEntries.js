@@ -8,7 +8,7 @@ const CONTENTFUL_ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT;
 const PAGE_CONTENT_TYPE = "pageCourse";
 const DATA_CONTENT_TYPE = "dataCourse";
 const META_INFO_TYPE = "topicPageMetaInformation";
-const GRAPHQL_ENDPOINT = "http://localhost:8000/__graphql";
+const GRAPHQL_ENDPOINT = "http://localhost:8000/___graphql";
 
 let environment;
 
@@ -155,10 +155,16 @@ const createEntries = async (courses) => {
     for (const course of courses) {
       const { templateName, templateIdString } = course;
 
-      if (
-        existingPageSlugs.includes(templateIdString) ||
-        existingTemplateIdStrings.includes(templateIdString)
-      ) {
+      const pageEntryExists = existingPageSlugs.includes(templateIdString);
+      const dataEntryExists = existingTemplateIdStrings.includes(
+        templateIdString
+      );
+
+      let pageEntry;
+      let dataEntry;
+      let metaInfoEntry;
+
+      if (pageEntryExists && dataEntryExists) {
         console.log(
           `Entry with templateIdString "${templateIdString}" already exists. Skipping.`
         );
@@ -166,33 +172,64 @@ const createEntries = async (courses) => {
       }
 
       try {
-        const pageEntry = await createContentfulEntry(PAGE_CONTENT_TYPE, {
-          fields: {
-            title: { "en-GB": templateName },
-            slug: { "en-GB": templateIdString },
-          },
-        });
-
-        const dataEntry = await createContentfulEntry(DATA_CONTENT_TYPE, {
-          fields: {
-            name: { "en-GB": templateName },
-            templateIdString: { "en-GB": templateIdString },
-          },
-        });
-
-        const metaInfoEntry = await createContentfulEntry(META_INFO_TYPE, {
-          fields: {
-            systemName: { "en-GB": templateName },
-            seoDescription: {
-              "en-GB": `SEO description for ${templateName}`,
+        // If the page entry exists use it, if it doesn't create a new one
+        if (!pageEntryExists) {
+          pageEntry = await createContentfulEntry(PAGE_CONTENT_TYPE, {
+            fields: {
+              title: { "en-GB": templateName },
+              slug: { "en-GB": templateIdString },
             },
-            shortDescription: {
-              "en-GB": `Short description for ${templateName}`,
-            },
-          },
-        });
+          });
+        } else {
+          const existingEntry = await space.getEntries({
+            content_type: PAGE_CONTENT_TYPE,
+            "fields.slug.en-GB": templateIdString,
+            limit: 1,
+          });
 
-        await linkDataAndTopicToPageCourse(pageEntry, dataEntry, metaInfoEntry);
+          pageEntry = existingEntry.items[0];
+        }
+        // If the page doesn't have a data entry associated with it create one and link it to the page entry
+        if (!pageEntry.fields.course) {
+          dataEntry = await createContentfulEntry(DATA_CONTENT_TYPE, {
+            fields: {
+              name: { "en-GB": templateName },
+              templateIdString: { "en-GB": templateIdString },
+            },
+          });
+
+          pageEntry.fields.course["en-GB"] = {
+            sys: {
+              type: "Link",
+              linkType: "Entry",
+              id: dataEntry.sys.id,
+            },
+          };
+        }
+
+        // If the page doesn't have a metadata entry associated with it
+        if (!pageEntry.fields.pageInformation) {
+          metaInfoEntry = await createContentfulEntry(META_INFO_TYPE, {
+            fields: {
+              systemName: { "en-GB": templateName },
+              seoDescription: {
+                "en-GB": `SEO description for ${templateName}`,
+              },
+              shortDescription: {
+                "en-GB": `Short description for ${templateName}`,
+              },
+            },
+          });
+
+          pageEntry.fields.pageInformation["en-GB"] = {
+            sys: {
+              type: "Link",
+              linkType: "Entry",
+              id: metaInfoEntry.sys.id,
+            },
+          };
+        }
+        // await linkDataAndTopicToPageCourse(pageEntry, dataEntry, metaInfoEntry);
       } catch (error) {
         console.error(
           `Error creating/linking entries for ${templateName}: ${error.message}`
@@ -207,7 +244,6 @@ const createEntries = async (courses) => {
 };
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
 
 // Calls createEntries 10 entries at a time to avoid rate limits
 const createEntriesInBatches = async (courses) => {
@@ -225,7 +261,6 @@ const createEntriesInBatches = async (courses) => {
     }
   }
 };
-
 
 // Fetches the data from the grapql endpoint
 const fetchData = async () => {
