@@ -1,5 +1,9 @@
 const contentful = require("contentful-management");
 const axios = require("axios");
+const readlineSync = require("readline-sync");
+const fs = require("fs");
+const path = require("path");
+
 require("dotenv").config();
 
 const CONTENTFUL_MANAGEMENT_TOKEN = process.env.CONTENTFUL_MANAGEMENT_TOKEN;
@@ -11,6 +15,41 @@ const META_INFO_TYPE = "topicPageMetaInformation";
 const GRAPHQL_ENDPOINT = "http://[::1]:8000/___graphql"; // try `http://localhost:8000/___graphql` if this gives a `ECONNREFUSED` error - see readme
 
 let environment;
+let pageEntryCount = 0; // used in log
+
+const promptEnvironment = () => {
+  const userEnvironment = readlineSync.question(
+    `Running on Contentful env "${CONTENTFUL_ENVIRONMENT}" on space ${CONTENTFUL_SPACE_ID}. Is this correct? (Y/N): `
+  );
+
+  if (userEnvironment.toUpperCase() !== "Y") {
+    console.log(
+      "Please update the CONTENTFUL_ENVIRONMENT OR CONTENTFUL_SPACE_ID value in the script before proceeding."
+    );
+    process.exit(1);
+  }
+};
+
+promptEnvironment();
+
+const date = new Date();
+
+const writeToLogFile = (logData) => {
+  const logsFolderPath = "./logs";
+  const dateString = date.toISOString();
+  const logFileName = `update_log_${dateString}.txt`;
+  const logFilePath = path.join(logsFolderPath, logFileName);
+
+  try {
+    if (!fs.existsSync(logsFolderPath)) {
+      fs.mkdirSync(logsFolderPath);
+    }
+
+    fs.writeFileSync(logFilePath, logData + "\n", { flag: "a" });
+  } catch (error) {
+    console.error(`Error writing to log file: ${error.message}`);
+  }
+};
 
 // Initialises the CMA and sets the environment in the top scope
 const initCMA = async () => {
@@ -29,63 +68,6 @@ const createContentfulEntry = async (contentType, fields) => {
   } catch (error) {
     throw new Error(
       `Error creating entry for ${contentType}: ${error.message}`
-    );
-  }
-};
-
-// Takes page, data, and meta info entries and links them together within the page entry's fields.
-const linkDataAndTopicToPageCourse = async (
-  pageEntry,
-  dataEntry,
-  metaInfoEntry
-) => {
-  try {
-    const {
-      fields: { title },
-    } = pageEntry;
-
-    if (!dataEntry || !metaInfoEntry) {
-      throw new Error(
-        `Cannot link empty data or topic entry for ${title["en-GB"]}`
-      );
-    }
-
-    // If the course field isn't found, set it to be an empty object
-    if (!pageEntry.fields.course) {
-      pageEntry.fields.course = {};
-    }
-
-    // Link the data - course entry
-    pageEntry.fields.course["en-GB"] = {
-      sys: {
-        type: "Link",
-        linkType: "Entry",
-        id: dataEntry.sys.id,
-      },
-    };
-
-    // If the meta info field isn't found, set it to be an empty object
-    if (!pageEntry.fields.pageInformation) {
-      pageEntry.fields.pageInformation = {};
-    }
-
-    // Link the component - topicPageMetaInformation
-    pageEntry.fields.pageInformation["en-GB"] = {
-      sys: {
-        type: "Link",
-        linkType: "Entry",
-        id: metaInfoEntry.sys.id,
-      },
-    };
-
-    await pageEntry.update();
-
-    console.log(
-      `Linked dataCourse and topicPageMetaInformation to pageCourse entry: ${title["en-GB"]}`
-    );
-  } catch (error) {
-    throw new Error(
-      `Error linking dataCourse and topicPageMetaInformation to pageCourse entry: ${error.message}`
     );
   }
 };
@@ -139,7 +121,6 @@ const createEntries = async (courses) => {
       existingPageEntries,
       existingDataEntries,
     } = await fetchExistingEntries();
-
     // Extracts the 'slug' field values from existing page entries and creates an array of slugs.
     // Defaults to an empty array if no slugs are found
     const existingPageSlugs =
@@ -163,11 +144,13 @@ const createEntries = async (courses) => {
       let pageEntry;
       let dataEntry;
       let metaInfoEntry;
+      pageEntryCount++;
 
       if (pageEntryExists && dataEntryExists) {
-        console.log(
-          `Entry with templateIdString "${templateIdString}" already exists. Skipping.`
-        );
+        const message = `Course ${templateIdString} was skipped as it already exists`;
+        console.log(message);
+        const logData = `${pageEntryCount}. ${message}`;
+        writeToLogFile(logData);
         continue;
       }
 
@@ -190,7 +173,10 @@ const createEntries = async (courses) => {
           pageEntry = existingEntry.items[0];
         }
         // If the page doesn't have a data entry associated with it create one and link it to the page entry
-        if (!pageEntry.fields.course) {
+        if (
+          !pageEntry.fields.courseData ||
+          !pageEntry.fields.courseData["en-GB"]
+        ) {
           dataEntry = await createContentfulEntry(DATA_CONTENT_TYPE, {
             fields: {
               name: { "en-GB": templateName },
@@ -198,17 +184,30 @@ const createEntries = async (courses) => {
             },
           });
 
-          pageEntry.fields.course["en-GB"] = {
-            sys: {
-              type: "Link",
-              linkType: "Entry",
-              id: dataEntry.sys.id,
+          console.log(
+            `linking dataEntry ${dataEntry.sys.id} with page entry ${pageEntry.fields.slug["en-GB"]}`
+          );
+
+          pageEntry.fields.courseData = {
+            "en-GB": {
+              sys: {
+                type: "Link",
+                linkType: "Entry",
+                id: dataEntry.sys.id,
+              },
             },
           };
+          console.log(
+            "pageEntry meta field after setting pageInformation:",
+            pageEntry.fields.courseData
+          );
         }
 
-        // If the page doesn't have a metadata entry associated with it
-        if (!pageEntry.fields.pageInformation) {
+        // If the page doesn't have a metadata entry associated with it, create one and link it to the page entry
+        if (
+          !pageEntry.fields.pageInformation ||
+          !pageEntry.fields.pageInformation["en-GB"]
+        ) {
           metaInfoEntry = await createContentfulEntry(META_INFO_TYPE, {
             fields: {
               systemName: { "en-GB": templateName },
@@ -221,15 +220,31 @@ const createEntries = async (courses) => {
             },
           });
 
-          pageEntry.fields.pageInformation["en-GB"] = {
-            sys: {
-              type: "Link",
-              linkType: "Entry",
-              id: metaInfoEntry.sys.id,
+          console.log(
+            `linking dataEntry ${metaInfoEntry.sys.id} with page entry ${pageEntry.fields.slug["en-GB"]}`
+          );
+
+          pageEntry.fields.pageInformation = {
+            "en-GB": {
+              sys: {
+                type: "Link",
+                linkType: "Entry",
+                id: metaInfoEntry.sys.id,
+              },
             },
           };
         }
-        // await linkDataAndTopicToPageCourse(pageEntry, dataEntry, metaInfoEntry);
+
+        pageEntryCount++;
+        // Log the update to the text file
+        const logData =
+          `${pageEntryCount}. pageEntry  ${pageEntry.fields.slug["en-GB"]} - ${pageEntry.sys.id}\n` +
+          `        metaInfoEntry ${metaInfoEntry.fields.systemName["en-GB"]} - ${metaInfoEntry.sys.id}\n` +
+          `        courseData ${dataEntry.fields.templateIdString["en-GB"]} - ${dataEntry.sys.id}}`;
+        writeToLogFile(logData);
+
+        await pageEntry.update();
+
       } catch (error) {
         console.error(
           `Error creating/linking entries for ${templateName}: ${error.message}`
@@ -237,7 +252,7 @@ const createEntries = async (courses) => {
       }
     }
 
-    console.log("All entries created and linked.");
+    console.log("All entries in batch created and linked.");
   } catch (error) {
     console.error(`Error creating entries: ${error.message}`);
   }

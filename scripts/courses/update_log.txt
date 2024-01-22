@@ -1,0 +1,372 @@
+1. pageEntry  advising_on_possession_proceedings_for_rented_housing - 7uzCvwoXwBRh60TzizE9Oo
+  metaInfoEntry Advising on Possession Proceedings for Rented Housing - 11K8jRTBWzdgX280bSgbQR  courseData advising_on_possession_proceedings_for_rented_housing - 7HIatlcxKZKGlDgLiXvctk}
+2. pageEntry  allocation_of_social_housing - 2evGmwBx9VTInRVtkLtzzh
+  metaInfoEntry Allocation of Social Housing - 3hLxpPKN3LaEwxXU0dqpO1  courseData allocation_of_social_housing - 5OR30DalalFioCqG8AW2KT}
+3. pageEntry  applying_to_suspend_a_warrant - 2P53V91FOIpYxc4cTGEgAr
+  metaInfoEntry Applying to suspend a warrant - 6lkNGG1wHPgowxqkJbNCDp  courseData applying_to_suspend_a_warrant - 6NZ3xGK5sF71TekQPbdNFl}
+4. pageEntry  assertiveness - 5HsPbpYVEfqSg2nSGLrT36
+  metaInfoEntry Assertiveness - 1RFvZoibZC42q9t128743c  courseData assertiveness - 5yaeLeKEtyaPTnjntRR2jW}
+5. pageEntry  assisting_nonuk_nationals - 6rCbqmTY2EgX1Zx4DZY0xx
+  metaInfoEntry Assisting Non-UK Nationals - 3Lz8Fm33hx9bD8xZeDmtSY  courseData assisting_nonuk_nationals - 2lq0tk3sAgNxWFnwI6iODo}
+6. pageEntry  assured_shorthold_tenancies - 5qI1weuMufVw23evtl3DTf
+  metaInfoEntry Assured Shorthold Tenancies - 4PtZTHMrfR4S2B3EO5O2C7  courseData assured_shorthold_tenancies - 7BAxeH7fQP6terlr8DtY1Z}
+7. pageEntry  assured_shorthold_tenancies_s21_notices - 3iAdMxwjiUxPGiBI97t6K1
+  metaInfoEntry Assured Shorthold Tenancies: S21 Notices - 7aGJfWGeD0ATgXHKutuCj2  courseData assured_shorthold_tenancies_s21_notices - 7wuaX0FHmwTNRYfWjTe0Tg}
+8. pageEntry  barriers_to_homelessness_advice_and_support - 3vUWB7X4VkRgb3JKta3cFn
+  metaInfoEntry Barriers to homelessness advice and support - 47naUJcY8P3siD3gx8obR8  courseData barriers_to_homelessness_advice_and_support - 5liSTJpXmgWjtktfKuCQ4d}
+9. pageEntry  breathing_space_and_housing - 6VN5aFSjDvgEedOVQwk9gr
+  metaInfoEntry Breathing Space and Housing - 1dgKzDRBhN6I0sRpibTn5D  courseData breathing_space_and_housing - 3CHuX0da3Owgkyv77ymJM7}
+10. pageEntry  breathing_space_an_introduction - 2yhgEQfknM42hsS4wRm9zB
+  metaInfoEntry Breathing Space: an Introduction - 7FTk1HRIZpparZv6IDWFVK  courseData breathing_space_an_introduction - 3Rl1NjRXbaJAcHOkmznstU}
+11. pageEntry  can_my_client_afford_to_stay_in_their_home - e2ypE6hgHDrLXysr9PmxA
+  metaInfoEntry Can my client afford to stay in their home - 32GrcL1vY3eskAlXc7vXMZ  courseData can_my_client_afford_to_stay_in_their_home - 7zflGtL3eoC3e48zXIl9dZ}
+12. pageEntry  casework_skills_for_prevention_and_advice_services - 30bZ8fh12oUPnKDgKyrY06
+  metaInfoEntry Casework Skills for Prevention and Advice Services - 65sgfAho5yAUfFPvRxxkmT  courseData casework_skills_for_prevention_and_advice_services - lV1w8nMrUMNzrhQKNNwPv}
+13. pageEntry  casework_skills_good_practice - OqNXdsZcOtD11K6Q3nE6w
+  metaInfoEntry Casework Skills: Good Practice - 29ZKwpYEnI6X12AJ6HuVms  courseData casework_skills_good_practice - 1OPcjOkoCoXTQph8xwQ7jc}
+14. pageEntry  challenging_and_defending_homelessness_decisions - 4N7NzYB1YNPcMeEeooDw48
+  metaInfoEntry Challenging and Defending Homelessness Decisions - 7201QxDTChNZV2H0F61tQD  courseData challenging_and_defending_homelessness_decisions - 6Guqwngovpr5fKBxT11fPl}
+15. pageEntry  challenging_homeless_decisions - 6osdl1SDTayBHQbggBcZ5q
+  metaInfoEntry Challenging Homeless Decisions - 4iexeb6m0fNCQsTbFoeVxk  courseData challenging_homeless_decisions - 6peApaqTFNzI9j7NzaLwZv}
+16. pageEntry  client_interviewing_and_negotiation_skills - ahgs1VBS8NE3ogxIOx3UU
+  metaInfoEntry Client Interviewing and Negotiation Skills - ZizE8iUGrZH6U4EnCdRRQ  courseData client_interviewing_and_negotiation_skills - 6PgSyXNvnWtJebrnq9Oda}
+17. pageEntry  community_care_and_housing - 4xL8kH8vhJ7PPWya2Mwtvw
+  metaInfoEntry Community Care and Housing - 2CG2LU4kQH4AeTa2BK3RvF  courseData community_care_and_housing - 5Bb9uiawS6I1PEQMl3K0Bt}
+18. pageEntry  complex_needs_and_domestic_abuse - 15gNWKOHcphjvzoxxrSgku
+  metaInfoEntry Complex Needs and Domestic Abuse - 6QUIaPEwHzxRNnVaLJFvlf  courseData complex_needs_and_domestic_abuse - 2k11qgJtnzYUJ0bOynZd9e}
+19. pageEntry  customer_care_and_telephone_skills - 7eDomWy9atDngFtY6XETSW
+  metaInfoEntry Customer Care and Telephone Skills - 1Zd6jXzc4bPqdFFGasdbcN  courseData customer_care_and_telephone_skills - 5dZoyjdyZsdPwB6vxrYple}
+20. pageEntry  dealing_with_landlord_harassment_and_unlawful_eviction - 1PszDQ1FQbOus7add4CMhl
+  metaInfoEntry Dealing with Landlord Harassment and Unlawful Eviction - 4hNVuUAoJDeCf49vFnYr4v  courseData dealing_with_landlord_harassment_and_unlawful_eviction - 4EXPptn84Hs55Otp4bpHbF}
+21. pageEntry  debt_and_breathing_space - Tn9WQHBtKTA9zuMKm56LD
+  metaInfoEntry Debt and Breathing Space - 7jspreIa74nAeV93I21sQi  courseData debt_and_breathing_space - 6Zwpb5amrcQzCg9OxxRQGQ}
+22. pageEntry  defending_mortgage_possession_proceedings - 2iRoQ2L6Fuk502wI1Tp1V9
+  metaInfoEntry Defending Mortgage Possession Proceedings - 5IbKswaC8Nb867Ubb9TXVr  courseData defending_mortgage_possession_proceedings - 6BfJEWD1Ec1eNDJfng2YMo}
+23. pageEntry  disrepair_and_housing_conditions - 3CkiuZ7hoYtUaQ9Nh373HK
+  metaInfoEntry Disrepair and Housing Conditions - 7xQaMFucj0ncZCEf7PfZqY  courseData disrepair_and_housing_conditions - 47am9m6cXmW1hlr6oNNISA}
+24. pageEntry  domestic_abuse_and_housing - 5phsvl81sPS1RmT8uH63pb
+  metaInfoEntry Domestic Abuse and Housing - 3r7wxDWb2ncKkWz8t2GYcV  courseData domestic_abuse_and_housing - 4hc6j12XK8yqag7lfDlcQl}
+25. pageEntry  domestic_abuse_and_welfare_benefits - 7CfD9FJdxdfKm420xjrWmd
+  metaInfoEntry Domestic Abuse and Welfare Benefits - 4ZzpJVI8xJERWKlt0NokR3  courseData domestic_abuse_and_welfare_benefits - 5zxrKQQG925wfiR6xVlUYy}
+26. pageEntry  domestic_abuse_awareness - 7BUkwts2CE0AySI9wT9gMp
+  metaInfoEntry Domestic Abuse Awareness - 7jAztl7zFAvVQ0w6MAVVDM  courseData domestic_abuse_awareness - 4pAlHqTtFFpNsZdP0rx2Ht}
+27. pageEntry  economic_abuse - 1neLOrxiqr7B8ZUQbF6BMj
+  metaInfoEntry Economic Abuse - 1OxmZVJnLRj4zdgZrJo0aC  courseData economic_abuse - 5ZvjO46OiIjWBBwIbp8nmF}
+28. pageEntry  eligibility_for_housing_assistance_eea_nationals - 2VCkjEFtX0SpA6YqZ4LlwP
+  metaInfoEntry Eligibility for Housing Assistance - EEA Nationals - 6CpAIj61efE8c2FEtMPQyu  courseData eligibility_for_housing_assistance_eea_nationals - 4OtN0WExF6GGdx6hSXFE5t}
+29. pageEntry  eligibility_for_housing_assistance_nonuk_eea_nationals - 4KL7NZ3PkrfVuWUh3XG71g
+  metaInfoEntry Eligibility for Housing Assistance - Non-UK & EEA Nationals - 2BR0o2i3NfUiUXJqdKrvwk  courseData eligibility_for_housing_assistance_nonuk_eea_nationals - 6DZwuAG0CAX8cbKcu0xxJQ}
+30. pageEntry  emotional_labour_and_resilience - 56oPPdfkLVOdBRQ5lhUjgr
+  metaInfoEntry Emotional Labour and Resilience - 1xYwAn1sT51WlyFIB2O445  courseData emotional_labour_and_resilience - 3ejK85fapnSq8LgRbcfppN}
+31. pageEntry  ending_a_tenancy_a_tenants_rights - 7M25FDZyNOrCaGjXrW9MVo
+  metaInfoEntry Ending a Tenancy: a Tenant’s Rights - 3Y7telUvOnxYY9pKGpkK57  courseData ending_a_tenancy_a_tenants_rights - 3gEFJL6AwwuSOhXXbw72nN}
+32. pageEntry  equality_act_and_public_law_defences_to_possession_claims - 2BTvdG2f0Cm3LJtje7KIC2
+  metaInfoEntry Equality Act and Public Law Defences to Possession Claims - 144dIoLGG6C1kMyUW4Sr2n  courseData equality_act_and_public_law_defences_to_possession_claims - 42HyeCjuBIJUm7QAhNj8js}
+33. pageEntry  equality_act_and_the_interests_of_children_in_homelessness_decision_making - 70ZxQasMz79Vt2kYa0wugJ
+  metaInfoEntry Equality Act and the Interests of Children in Homelessness Decision Making - 2F5FOhKVWgwXDG4Ko96TN1  courseData equality_act_and_the_interests_of_children_in_homelessness_decision_making - FCobno8DphmnIqkKj8TVW}
+34. pageEntry  handling_challenging_situations - 6gyQK6sSNT20fV97dozKhg
+  metaInfoEntry Handling Challenging Situations - 5m3f1I5gOnigiVl6CV88M1  courseData handling_challenging_situations - gsTz3fn9Tj7sdULUULpi9}
+35. pageEntry  hoarding_behaviours - 6V3uXVt7IvYqvlYQqNvp4F
+  metaInfoEntry Hoarding Behaviours - Sxaqbc4u26gLUH477twxb  courseData hoarding_behaviours - 6ri2KN9gIqMBcOqVaLbHE9}
+36. pageEntry  homelessness_and_allocations_law_advanced - 5gtbR54EqWSqu5zmZCCLSf
+  metaInfoEntry Homelessness and Allocations Law: Advanced - 2XztD8AciWwDIrgzdOPPpz  courseData homelessness_and_allocations_law_advanced - 2AFigPlfgA4LTT1wp3gDIw}
+37. pageEntry  homelessness_and_temporary_accommodation - Ww5i22KuUW64xlmFEsob8
+  metaInfoEntry Homelessness and Temporary Accommodation - Q3Y9M3IPwHxpL839DPTp5  courseData homelessness_and_temporary_accommodation - hwHgT7gI8QtAIN72vTQuX}
+38. pageEntry  homelessness_case_law_update - 51V0ZsUKHYLXOpJiQg3f0E
+  metaInfoEntry Homelessness Case Law: Update - 27p4FdpId9lChq8iwFAHlL  courseData homelessness_case_law_update - 7Gs7d7uf0tAVQ2gaibVRGn}
+39. pageEntry  homelessness_duties - 45w9PkUQBKXoCzFesxgWmZ
+  metaInfoEntry Homelessness Duties - AaqQn8YcSfvxsmXHOwn9h  courseData homelessness_duties - 3l198FLtT8ZXPsnHHto5rv}
+40. pageEntry  homelessness_law_introductory - x1ZlRhl2B5yR8pQw6VE7l
+  metaInfoEntry Homelessness Law: Introductory - 2B0veE4vyGAeM2DimBtyqU  courseData homelessness_law_introductory - 3OuTuzxvDjZDdtjSsr3ZDe}
+41. pageEntry  houses_in_multiple_occupation_mandatory_licenses - 4atSWf33RxPLNYKs493JGr
+  metaInfoEntry Houses in Multiple Occupation: Mandatory Licenses - 3i8LNXcJqWIZuGk20ovRyx  courseData houses_in_multiple_occupation_mandatory_licenses - 5Wj0A5CigupVdg6tCj9LcH}
+42. pageEntry  housing_and_mental_health - HfiEED3XaldmIm6ZxZSw6
+  metaInfoEntry Housing and Mental Health - 3wgTGbrnaOnj8GGfwibp7w  courseData housing_and_mental_health - beLBFe66pDHMN3Z1PvPgV}
+43. pageEntry  housing_benefit_for_supported_accommodation - az0HC2cSEpK7pa0gI0RTI
+  metaInfoEntry Housing Benefit for Supported Accommodation - OHDy77r8Xz9dt508qciu6  courseData housing_benefit_for_supported_accommodation - 2IS1hZxUXhXLyfndQXImAf}
+44. pageEntry  housing_disrepair - 7BbhmaP9CoO3lq1nYsh3Ej
+  metaInfoEntry Housing Disrepair - OD8xHVSxA8FKdEUqxgsbW  courseData housing_disrepair - 258IbYBwnNNAgPObhGQlg6}
+45. pageEntry  housing_duties_to_young_people - 6n9IlrjFNVSlYLXRWG3bu1
+  metaInfoEntry Housing Duties to Young People - 43OZ1uGYePX3Wh9bwpJX92  courseData housing_duties_to_young_people - 4pcehIs6C5seXOo55cvxGE}
+46. pageEntry  housing_law_and_advice_a_foundation_part_a - 3exQUws7VHnssbKFRcG4a
+  metaInfoEntry Housing Law and Advice: A Foundation (Part A) - 3NHpdgvrKb5QbcvDITw1z8  courseData housing_law_and_advice_a_foundation_part_a - 5ByK4dJqdVwP4BJSRNWhdW}
+47. pageEntry  housing_law_and_advice_a_foundation_part_b - 1vxKQduab8jk9tAdd82kou
+  metaInfoEntry Housing Law and Advice: a Foundation (Part B) - 3PsJjWRjjb6YixiL2S7yd  courseData housing_law_and_advice_a_foundation_part_b - 50KEuXNI8KCtx7rwJecDKF}
+48. pageEntry  housing_law_roundup - 5UtrpuPNrcRMrin6CQSUyH
+  metaInfoEntry Housing Law Roundup - 62qjpv6mSdoFgTb9dY4Qwc  courseData housing_law_roundup - 2Cgu7B6dxARXQYDSLvseYu}
+49. pageEntry  housing_or_homeless_application_the_difference - 6AHkdHfFXI3vNwzAdnREOG
+  metaInfoEntry Housing or Homeless Application - The Difference - 1YZ666BIInKqBqFL6FPSbS  courseData housing_or_homeless_application_the_difference - 710w6g7h2QJOG4RCftlS9j}
+50. pageEntry  housing_possession_hearings_practice_and_procedure - 7wMBKt8tDldzVXfIT0OplB
+  metaInfoEntry Housing Possession Hearings: Practice and Procedure - 1lyZhwnIaISJby2CwyKqvs  courseData housing_possession_hearings_practice_and_procedure - 2yKwgBdTQ1Idiw6nNaXU3s}
+51. pageEntry  housing_rights_for_ex_offenders - 1zYXF3yTYFBuQgSIqcydLo
+  metaInfoEntry Housing Rights for Ex Offenders - 5vr7PfDXiQq70H9ycz71kp  courseData housing_rights_for_ex_offenders - 2ZEQoyFgtUJtMdJ1f8noYR}
+52. pageEntry  housing_rights_for_students - 5YTMYXsijhQAVaaNSZuoQ7
+  metaInfoEntry Housing Rights for Students - 2YvPTbQGLOgAdJYnDZnYhn  courseData housing_rights_for_students - 5WwC4zIJq2l32uIrfCndZv}
+53. pageEntry  housing_rights_for_tenants_with_tied_tenancies - 4iga1UafKsrw5sFw6lIxBK
+  metaInfoEntry Housing Rights for Tenants with Tied Tenancies - 2pIfW8NuFj4RMfRAGHURAi  courseData housing_rights_for_tenants_with_tied_tenancies - 4JHQS2VXEHnnM57loJ5GcF}
+54. pageEntry  housing_status_and_security_of_tenure - 2Y10jIOd9N9x7HwWqVKBs0
+  metaInfoEntry Housing Status and Security of Tenure - AEzuLyDqb5PSGef5s0o9N  courseData housing_status_and_security_of_tenure - ATmckQjoXQD5oLbuE8CHg}
+55. pageEntry  how_to_establish_local_connection - 1SHQiyt8iTy439UqFxH0r9
+  metaInfoEntry How to Establish Local Connection - 2WCFqWpekXACBZVggHnUkT  courseData how_to_establish_local_connection - 6SMBHA0xdRLurC5aZyZs6a}
+56. pageEntry  how_to_identify_a_landlord_in_the_private_rented_sector - 6RYZUivc0kTlqconpIlQRR
+  metaInfoEntry How to Identify a Landlord in the Private Rented Sector - J0vLOgKWgLO6g3nfGxhco  courseData how_to_identify_a_landlord_in_the_private_rented_sector - 2cUUcVLSGLiDnPy6LXRI06}
+57. pageEntry  identifying_housing_status_1_tenancy_or_licence - 3jq2aDXXlNQuXWYeKekEFx
+  metaInfoEntry Identifying Housing Status (1): Tenancy or Licence - 1vCR1cpubRJtBACu4nN3LM  courseData identifying_housing_status_1_tenancy_or_licence - 7kdRa5Eae6S1hhNjsXBVqP}
+58. pageEntry  identifying_housing_status_2_excluded_occupiers_no_court_order_required - 40QmuYjIMXR9NwsLLB9xZa
+  metaInfoEntry Identifying Housing Status (2): Excluded Occupiers – no court order required - 61uqtbUcJA93fXZQJs2ehM  courseData identifying_housing_status_2_excluded_occupiers_no_court_order_required - 7stcFGO10BqA9t0z90P8di}
+59. pageEntry  immigration_status_and_eligibility_for_housing - 4LeGw4dXqrQK9qldrU9pjj
+  metaInfoEntry Immigration Status and Eligibility for Housing - 4X6WymLXslyuZC2hMU1ssc  courseData immigration_status_and_eligibility_for_housing - RkR95ArmzNg4PxnY5Letq}
+60. pageEntry  intergenerational_abuse - 5rcteG5vUbrTNJLX6KL2aN
+  metaInfoEntry Inter-Generational Abuse - 57LnEFZtQBBftZDNS7vcHk  courseData intergenerational_abuse - 4isBi4gTQvwnHUAHcRDVsx}
+61. pageEntry  introduction_to_eligibility_for_homelessness_assistance - ULQkP2PSBmAsqnfu7Dkmq
+  metaInfoEntry Introduction to Eligibility for Homelessness Assistance - 69FWQ4ouCRCMKtVl3PkU6i  courseData introduction_to_eligibility_for_homelessness_assistance - 1p4uYk0QPCGegc4ahOOWf2}
+62. pageEntry  introduction_to_eligibility_for_housing_assistance - 1k14x7RMUpN3Vtd446DEZq
+  metaInfoEntry Introduction to Eligibility for Housing Assistance - 1yp00eJcIhNrn3w5Bk35ms  courseData introduction_to_eligibility_for_housing_assistance - 3U3vbFV1pgSjHHs7zqMFpC}
+63. pageEntry  introduction_to_financial_capability_and_debt_advice - 64YgcykWZEXe6fzahn48tI
+  metaInfoEntry Introduction to Financial Capability and Debt Advice - 3vFEdxkKwCOVsEiYkURwj4  courseData introduction_to_financial_capability_and_debt_advice - 5TOmcsyZgjqTh85KwhvFlz}
+64. pageEntry  introduction_to_housing_and_homelessness_for_nonhousing_advisers - 3OkoTBCM9wnYpENMOU5VYN
+  metaInfoEntry Introduction to Housing and Homelessness (for non-housing advisers) - 6kmYzW7xBVZsrwJ8Xw9Cdf  courseData introduction_to_housing_and_homelessness_for_nonhousing_advisers - 60gnRkSzYV8fsvyXbUjpQk}
+65. pageEntry  introduction_to_housing_conditions_and_disrepair - 2mky1j71pPxWSDxfHzjgqx
+  metaInfoEntry Introduction to Housing Conditions and Disrepair - 7AIu9urw2rsi2kPfHqqfGH  courseData introduction_to_housing_conditions_and_disrepair - 3K2FbqNSubSvs65wHFUAJl}
+66. pageEntry  introduction_to_housing_costs_in_universal_credit - 65MgBoOFt3EJWTIc5xNMXP
+  metaInfoEntry Introduction to Housing Costs in Universal Credit - 6a0sOsTQJ0yh395xUzpavF  courseData introduction_to_housing_costs_in_universal_credit - 13ffYIltSjrfSfdTbkeZlu}
+67. pageEntry  introduction_to_housing_status - 5Kwm5DSQcTSzxcYGlJBW6t
+  metaInfoEntry Introduction to Housing Status - 3QLq0elBUdu72RQ7PfnxFG  courseData introduction_to_housing_status - 2L5MigKwFtjjzOuHOMAa7g}
+68. pageEntry  introduction_to_mediation_skills - 23jCV2GgY2usNW8CkW2nhu
+  metaInfoEntry Introduction to Mediation Skills - 5lV6IdueryPchk7lfER48j  courseData introduction_to_mediation_skills - LaxIsonGNKjeQ0SMc8n16}
+69. pageEntry  introduction_to_possession_proceedings_for_rented_housing - 5PMbj5g1qiEEghT00HLvhE
+  metaInfoEntry Introduction to Possession Proceedings for Rented Housing - 2sWg06KSlm1RCElHF6lgsa  courseData introduction_to_possession_proceedings_for_rented_housing - 5sbDhTsQTPkPwG5DBuiIcG}
+70. pageEntry  introductory_and_starter_tenancies - 7l3fwg0mW7tR6FDBosUQfJ
+  metaInfoEntry Introductory and Starter Tenancies - 4xzK9ILvQBw7L44em8vPJ8  courseData introductory_and_starter_tenancies - 2xowypiORaGRTbVlEpEfuq}
+71. pageEntry  landlord_and_tenant_law_introductory - 1PKLQUnssJym9ZzjtD85yu
+  metaInfoEntry Landlord and Tenant Law: Introductory - E4SgrVx2tfSTqEroun3Cj  courseData landlord_and_tenant_law_introductory - 19FhZPTqFXo8PCmv3Awxme}
+72. pageEntry  landlord_harassment - kz08jwQFh8vVAeGsexzrt
+  metaInfoEntry Landlord Harassment - 74KZ3H3ZvXlIx3Do3kgW5E  courseData landlord_harassment - QBXI9PXpD3GPSAGmQmANZ}
+73. pageEntry  learning_workshop_intentional_homelessness - 78aISNjbR9PyWiCHdya1fI
+  metaInfoEntry Learning Workshop: Intentional Homelessness - 4RoWUdew1d89BQbaKPAcds  courseData learning_workshop_intentional_homelessness - 3oqeZ963h3cBVbbY30oplz}
+74. pageEntry  local_authority_homelessness_duties - 3EyU4BbX0uggsRBXu0USdE
+  metaInfoEntry Local Authority Homelessness Duties - 6easeZVOCP5WgbzrC4eanA  courseData local_authority_homelessness_duties - hoG90NkqwVoWwUqTnNrku}
+75. pageEntry  local_connection - 7vFLUplmVhIMv0DNoN4CoR
+  metaInfoEntry Local Connection - 5ISdXOuAkpDNwYy2n3dU7  courseData local_connection - 1QwReH4xfROY5DBCW8rLA3}
+76. pageEntry  local_connection_referrals - qFj0ICACWt4gfFWBjWhZc
+  metaInfoEntry Local Connection Referrals - 3GLCQlXbOYQNRxXqL7zp0T  courseData local_connection_referrals - 1E64iGTkUuOyXOhKn5qCCN}
+77. pageEntry  managing_wellbeing_at_work - 237pqygYVBsrTzBK9r08T1
+  metaInfoEntry Managing Wellbeing at Work - 4evUfIs0PsExF8vymJt4yF  courseData managing_wellbeing_at_work - 6QbAe5PGRFj1AQpSuK8wi1}
+78. pageEntry  maximising_your_negotiation_and_influencing_skills - UtfzonDmXzx3HkWU5MJbZ
+  metaInfoEntry Maximising Your Negotiation and Influencing Skills - 4mWbZagEt2jxLpqvUd9244  courseData maximising_your_negotiation_and_influencing_skills - 2M7K6rp5FeVNBfqoOC8FhL}
+79. pageEntry  mental_health_awareness - 44jHwVMko3n9IST9mEP7MQ
+  metaInfoEntry Mental Health Awareness - 5wHm4fi9YkZDrgYpHm5tN9  courseData mental_health_awareness - 3b9TG8WcPsv6hbUjh1EIXA}
+80. pageEntry  mortgage_possession_helping_tenants_of_landlords - 3LHfHoRxxaxUR8HMNXGPVx
+  metaInfoEntry Mortgage Possession: Helping Tenants of Landlords - 1QfHqs9h71Us6txqxtLYvo  courseData mortgage_possession_helping_tenants_of_landlords - 5ccyva0F51VJQrVDWKIZXt}
+81. pageEntry  mortgage_repossessions - 4KBLBcnFZJxKXBmyLKrzVO
+  metaInfoEntry Mortgage Repossessions - 7JK1oIBEX8TelWJ1rLWoNn  courseData mortgage_repossessions - 46G8bKdk5nRrZOmWGpyxjm}
+82. pageEntry  motivational_interviewing_skills - yxSB9KqBXq4FWbnlw8S9N
+  metaInfoEntry Motivational Interviewing Skills - 1jT820idrN0odQW4vBBz6D  courseData motivational_interviewing_skills - 3Inay4ZvgRSDShJBOW6S4M}
+83. pageEntry  notices_seeking_possession - 1nyx8u4GOOXjiFqESCjDPI
+  metaInfoEntry Notices seeking possession - 5Hrr3SfwBzuGZ1bnBtYRx  courseData notices_seeking_possession - 2GEM3apqVrLYzCLNoWnYZ5}
+84. pageEntry  personal_independence_payment - wzO4FYoVPIXpBj0qs8NUJ
+  metaInfoEntry Personal Independence Payment - 2bqsbsnhGrJwDAUfBL6cG6  courseData personal_independence_payment - 6ScG7OIH6x7A51XbLPxRJF}
+85. pageEntry  persons_from_abroad_an_introduction_to_housing_cost_entitlement_for_eea_national_households - x2Dhs5KyWkTvANhBkothb
+  metaInfoEntry Persons from Abroad: an Introduction to Housing Cost Entitlement for EEA National Households - 5JzGgup8Uh63vBWXyXLiSg  courseData persons_from_abroad_an_introduction_to_housing_cost_entitlement_for_eea_national_households - 2XjzFCEh3UFBMRJGD1vFNy}
+86. pageEntry  pip_appeals_to_the_firsttier_tribunal - 13nJ2kPDsCoNkATfkf98vh
+  metaInfoEntry PIP: Appeals to the First-Tier Tribunal - 5yimLmhjj6uGWxqpM8aoRd  courseData pip_appeals_to_the_firsttier_tribunal - 37QKXzdaYBWm19jrPn3AXc}
+87. pageEntry  pip_claims_and_mandatory_reconsiderations - 6GpaSQxlKj1e3OkgcopmwD
+  metaInfoEntry PIP: Claims and mandatory reconsiderations - s6a9snFsxWB5FrDiIfADb  courseData pip_claims_and_mandatory_reconsiderations - 1MeFNvYDeUKjWsvrNjnvBb}
+88. pageEntry  accommodation_provided_by_employers - 5Cr3YWXRmmfUlo7sP6KuJu
+  metaInfoEntry : Accommodation provided by employers - 1tY8Umec4LMHcwOo6rxpxu  courseData accommodation_provided_by_employers - 5FHfWqPeLUedz9qdA2x4oX}
+89. pageEntry  affordability_and_intentional_homelessness - 5pITxrKbQvGnTeyp2HyVyP
+  metaInfoEntry : Affordability and Intentional Homelessness - 34yhnH9zsW0g5p4dDeIQam  courseData affordability_and_intentional_homelessness - 6YwJcc8OEjALG9CiVKIuKV}
+90. pageEntry  assured_and_assured_shorthold_tenancies_section_8_notices - 5Lv5lDL3qSdoZhu5yvY2G3
+  metaInfoEntry : Assured and Assured Shorthold Tenancies Section 8 Notices - 1gzMELNKPN08zFfqzoxcgJ  courseData assured_and_assured_shorthold_tenancies_section_8_notices - 2NqPzdzA1AJWqQx4PpslYF}
+91. pageEntry  assured_tenancies_grounds_for_possession - 4D6t77ueX6iwojSmYs9bL2
+  metaInfoEntry : Assured Tenancies - Grounds for Possession - 17PNHdx6f9fJUlmORnAONF  courseData assured_tenancies_grounds_for_possession - 33Kw04QrWLWwcq5wGjCrpv}
+92. pageEntry  basic_introduction_to_eligibility_for_housing_assistance - UVxTJjd56M0IMOSUbh4MN
+  metaInfoEntry : Basic introduction to eligibility for housing assistance - 4zO3t2qcnP2R9hH0YKPsPq  courseData basic_introduction_to_eligibility_for_housing_assistance - 3qXGyjQK6iwkkLRWkKAkA7}
+93. pageEntry  basic_introduction_to_the_habitual_residence_test - 1nFzke2DwXYFvSMWRXksNu
+  metaInfoEntry : Basic introduction to the habitual residence test - 6vlwGYJN1udv9pOH8E820L  courseData basic_introduction_to_the_habitual_residence_test - 60pcbjHJPDuYLRCoPJV87o}
+94. pageEntry  can_a_student_claim_housing_costs - 28xGT0aAy2x3pCQQ8nifUx
+  metaInfoEntry : Can a student claim housing costs? - 6JIktODU1PA399RDVSgGsh  courseData can_a_student_claim_housing_costs - 0kvpJQdHUghirpTuf1JDe}
+95. pageEntry  can_someone_claim_housing_costs_after_leaving_the_former_jointly_owned_family_home - 6y3JXiBzlzInafJfVftuNf
+  metaInfoEntry : Can someone claim housing costs after leaving the former jointly owned family home? - 1w5Uf8wzJ6PPWDbYEfdQsO  courseData can_someone_claim_housing_costs_after_leaving_the_former_jointly_owned_family_home - 1IVqc3FRZWSbpSqOZJjWxb}
+96. pageEntry  changes_to_ending_asylum_housing - 5KB607RqDUW05Vb7k7PINI
+  metaInfoEntry : Changes to ending asylum housing - 68ltU8gFITpCAdLlWU9vVk  courseData changes_to_ending_asylum_housing - 36HTPSdmnwWnM2tBTl7GHF}
+97. pageEntry  damp_and_mould_in_rented_properties - 3m8WaFuHCm9tOGzgMLmpDi
+  metaInfoEntry : Damp and Mould in Rented Properties - 2mJ3XccCWfrFpeChzVhRUi  courseData damp_and_mould_in_rented_properties - 4XtzpVftbKxoMmAiCQQ5d3}
+98. pageEntry  ending_a_tenancy_tenant_rights - 3fRbAzYDtZV5KE2DqwUdyV
+  metaInfoEntry : Ending a Tenancy. Tenant Rights - 3nVCf78pnd9psAddFDHqgW  courseData ending_a_tenancy_tenant_rights - 3OwJV4ZeWZNBinktArdCHK}
+99. pageEntry  ending_the_relief_duty - 3PdKWXOqaY0hsabb7Ip81p
+  metaInfoEntry : Ending the Relief Duty - 6A9qMVIOCDpI847ZwkcuQB  courseData ending_the_relief_duty - 4olj6AOCv2XkVfUtc43nse}
+100. pageEntry  finding_your_way_around_the_homelessness_code_of_guidance - 16Kjo7x5pRf4wtTGaZCmSc
+  metaInfoEntry : Finding your way around the Homelessness Code of Guidance - 60a4bZFRn7LjRHWmefC6hB  courseData finding_your_way_around_the_homelessness_code_of_guidance - 70RDxqJu8pKUXOWYKQbQnU}
+101. pageEntry  fixed_and_periodic_what_do_these_terms_mean - 2T4irKDlAxKWnkuBUwKpKF
+  metaInfoEntry : Fixed and periodic – what do these terms mean? - 2clF3BUGIIf80KZkSBl0Ek  courseData fixed_and_periodic_what_do_these_terms_mean - 79aiuwrlDsSpRsF0osYpP6}
+102. pageEntry  gas_safety_requirements_is_a_section_21_notice_valid - 17qYJBLBaRFqPBEGo3Ba5X
+  metaInfoEntry : Gas Safety Requirements – is a Section 21 notice valid? - 3twnXsNuswh2yNWoDC7H5B  courseData gas_safety_requirements_is_a_section_21_notice_valid - WN0sIc6BomLfI6iQGHYtO}
+103. pageEntry  helping_clients_not_eligible_for_housing_assistance - 1VG1OBUEtGY2mHyJQC7g22
+  metaInfoEntry : Helping clients not eligible for housing assistance - 6aAhTV7nELFFfMWlSAwJuH  courseData helping_clients_not_eligible_for_housing_assistance - 1qa8etFyFMdJF7MtrwyhL7}
+104. pageEntry  holding_deposits - 4o7NpeB7qdbk5rvi3yLE8z
+  metaInfoEntry : Holding Deposits - 7Mz8NHj5WWu7fA0YEZVlj6  courseData holding_deposits - 7ihXnvhmLIeptfoHBifzde}
+105. pageEntry  homelessness_applications_vulnerability_and_reason_to_believe_priority_need - 38JLlMrdVfPazgXG2qYIYs
+  metaInfoEntry : Homelessness Applications – Vulnerability and ‘Reason to believe’ priority need - 2NzJqCItKT03b69hGOo1rY  courseData homelessness_applications_vulnerability_and_reason_to_believe_priority_need - 1OPLpiFpgv0rElcGtxnYhF}
+106. pageEntry  introduction_to_antisocial_behaviour - 7ItEMSFxgi24Ryl3ITS7DF
+  metaInfoEntry : Introduction to Antisocial Behaviour - 6dtrKTpSpXTgTXiGrOKgGp  courseData introduction_to_antisocial_behaviour - 7d0ZKMFBXdQmStqi8utCle}
+107. pageEntry  introduction_to_homelessness - 5hLBCrjMdB6UUebpYql5bW
+  metaInfoEntry : Introduction to Homelessness - 2FeOaUDz4HzeCQJYQmHd70  courseData introduction_to_homelessness - 4COJ55crVrSpjKkEGsWXtX}
+108. pageEntry  introduction_to_housing_law_for_beginners - 4TIaYPcna097sZFrPHLQRC
+  metaInfoEntry : Introduction to housing law for beginners - 4cP405DGqJTgmk6oFPAWJE  courseData introduction_to_housing_law_for_beginners - 12PpWmWuBb81lkjT3l1d2w}
+109. pageEntry  introduction_to_joint_tenancies_and_common_issues - 10GvBo6PEZumjUbnm9pqP6
+  metaInfoEntry : Introduction to Joint Tenancies and Common Issues - qUl4FZvzYSQDrR29oc0aK  courseData introduction_to_joint_tenancies_and_common_issues - 36qke90cXAOws1aK21A8Th}
+110. pageEntry  introduction_to_local_connection - 6GnhROg3jZxw4JMxpDLmpM
+  metaInfoEntry : Introduction to Local Connection - 5BUdjWIYAzpovLFZhyU8Gl  courseData introduction_to_local_connection - 2RG8Bmd4ImHR7gra6eFqvZ}
+111. pageEntry  introduction_to_personalised_housing_plans - 6N48vmulRJCBfeZIn5XS5p
+  metaInfoEntry : Introduction to Personalised Housing Plans - 4t3SKUqm87cCzed1WSUYbY  courseData introduction_to_personalised_housing_plans - 3VKtWSTCccdcUfttkNQxvV}
+112. pageEntry  introduction_to_public_authorities_duty_to_refer - 4cmPjcBh9CGqxpe3ItDuTB
+  metaInfoEntry : Introduction to Public Authorities Duty to Refer - 3kPHqiyyYrIppjrKwHQDIp  courseData introduction_to_public_authorities_duty_to_refer - 53rtgxGSLNDeptejpMsANv}
+113. pageEntry  introduction_to_section_21_notices - 4QjKC3Hy6bVTZdDNyKqzW9
+  metaInfoEntry : Introduction to section 21 notices - 5CWMxLv0uKASXVYUajomDJ  courseData introduction_to_section_21_notices - 1ApNucyuSC3lFlIONTCHbd}
+114. pageEntry  introduction_to_the_debt_respite_breathing_space_scheme - 4sDRAXSButlu45xICnFLlz
+  metaInfoEntry : Introduction to the debt respite breathing space scheme - 4oUTUomG4BXud1kQkxIqk3  courseData introduction_to_the_debt_respite_breathing_space_scheme - 5TTPpqFtJeKO6NMPfB5KE1}
+115. pageEntry  keeping_a_rented_home_when_in_prison - 31Ab2AnkVTJOAlY555NQDt
+  metaInfoEntry : Keeping a rented home when in prison - 1tezZhkvqyyTifM04idmzq  courseData keeping_a_rented_home_when_in_prison - 6Wj8fZ8vVqR7EqTp3HK86Z}
+116. pageEntry  management_transfers - 67RKkvdvsbVD0GMVaULKj6
+  metaInfoEntry : Management transfers - 3gHPOuHdlmB34lIlkKr2mQ  courseData management_transfers - 1PcISo3zkJoYO48OEZlBEA}
+117. pageEntry  rent_increases_for_private_tenants - kLhLjCC4uaG5iPrqIEOt2
+  metaInfoEntry : Rent Increases for Private Tenants - 5STl0x5Q1v21IeSEu3hnIc  courseData rent_increases_for_private_tenants - 7DFNArbhcUaG1M58oPiXPl}
+118. pageEntry  secure_tenancies_grounds_for_possession - 3oT8Q2RNRklEaoppOLc0XO
+  metaInfoEntry : Secure tenancies - grounds for possession - 5Fonj2R83HkTVrnJcqteSf  courseData secure_tenancies_grounds_for_possession - 6URorufBJ0l9VQMYP54xev}
+119. pageEntry  students_and_housing - 3GUicqvSh8B02DLsfdi03I
+  metaInfoEntry : Students and Housing - 27dcJmq7Du2TVENgC9mfaL  courseData students_and_housing - 27zmAKsjaM7siLN7Rdv4HH}
+120. pageEntry  suitability_bed_and_breakfast - 4AJDupIfEFvvjytDrEylyE
+  metaInfoEntry : Suitability - bed and breakfast - zJiwaicIhFpItvIzQysQE  courseData suitability_bed_and_breakfast - 2LA9iBzGo27x6xnV9Um9s7}
+121. pageEntry  tenancy_deposits - 7HKB0fms5rJT6uXXE6lLT5
+  metaInfoEntry : Tenancy Deposits - 1Kayt2p8WMza6x9d0RTWR6  courseData tenancy_deposits - UwxMGg4j021mimZgmU4Ot}
+122. pageEntry  tenancy_exchanges_mutual_exchanges - 2TV4TnvaVfJUsi2fBqlnnt
+  metaInfoEntry : Tenancy Exchanges / Mutual Exchanges - 54biQZCRWvXtMjEyShNtJm  courseData tenancy_exchanges_mutual_exchanges - 5kFpzTCA0qYMHBEW7vrrXA}
+123. pageEntry  tenancy_transfers - 2ELwrOyijL886PCCeU0HaZ
+  metaInfoEntry : Tenancy Transfers - 6zwxQHGZqiFr06Fqy8kKf4  courseData tenancy_transfers - 4SLEINUpjVzoSYCDmT73C3}
+124. pageEntry  tenant_fees_act - 1noN8K1BusPRQqklxhxx6M
+  metaInfoEntry : Tenant Fees Act - 4aHIFSm4JesNG2xODnxhUu  courseData tenant_fees_act - 3QVhvI2qa6m7yZxxkTadCL}
+125. pageEntry  tenant_under_occupancy - 1jM6GwHB8ISfvqNgGJKr9x
+  metaInfoEntry : Tenant Under Occupancy - 4EvbpunyS0EvFKlWjfAcuE  courseData tenant_under_occupancy - 21x7mHHSHaw5a9Q1qyiQM0}
+126. pageEntry  the_courts_and_case_law_an_overview - 2wVTo7PLJ6wnnBkpAxS6lk
+  metaInfoEntry : The courts and case law: an overview - 6lctn8Q9lWVXQR4aZ5K7Tm  courseData the_courts_and_case_law_an_overview - 63RrKL7dnnyheKJbrfX12V}
+127. pageEntry  the_homeless_prevention_duty - 6za5wdKzP7BpkoGH6Hd3kD
+  metaInfoEntry : The Homeless Prevention Duty - 60dWdaHpf4NyNgnZx2f2Xh  courseData the_homeless_prevention_duty - 72gCOiMIyHMWni0dw2X089}
+128. pageEntry  the_homeless_relief_duty - 7kAKsPsq7Qn6KeKuJd4tVJ
+  metaInfoEntry : The Homeless Relief Duty - 2vbhlxsu2bwAec8FG8dZBO  courseData the_homeless_relief_duty - 5gEQUj8W7qQYWvaCtgOHBz}
+129. pageEntry  the_ukraine_visa_schemes_information_for_housing_workers - 1J7FkqFMGsLujsvvhgomUB
+  metaInfoEntry : The Ukraine Visa Schemes: information for housing workers - 4KwbjlJxtqrR1YuNwRIlch  courseData the_ukraine_visa_schemes_information_for_housing_workers - g5q7tShrCFMmmb8M2AOgu}
+130. pageEntry  timeline_of_local_authority_homeless_duties - 97Xof0VYjsronEskMMSge
+  metaInfoEntry : Timeline of local authority homeless duties - kA5csNjKLAlhNnDhqOXL0  courseData timeline_of_local_authority_homeless_duties - 5pOYqfqKIKIuBQZ2ycSyo4}
+131. pageEntry  understanding_homelessness_and_housing_local_authority_duties - 6KEQpHffDzCd1j1H0LmMdV
+  metaInfoEntry : Understanding Homelessness and Housing: Local Authority Duties - 4r9NlH0ypLDTpJigngozWT  courseData understanding_homelessness_and_housing_local_authority_duties - 3mLOGndweCrP6WOLNyuBQs}
+132. pageEntry  useful_resources_for_housing_advisers - 2UcQ6EV3L44vg6xxVpPhQh
+  metaInfoEntry : Useful Resources for Housing Advisers - 30CcrbVvVaxBWaMZV2vmtF  courseData useful_resources_for_housing_advisers - IYoHz9ythwdjX1tkyKo7w}
+133. pageEntry  what_is_a_mortgage - 7q3TaBnSUREVocCd5YU1Dd
+  metaInfoEntry : What is a mortgage? - 4RKDp0NWt9PDYkFr1zEnZn  courseData what_is_a_mortgage - 41EhOXWEpMlowkgDInJ2fI}
+134. pageEntry  when_a_tenancy_is_binding_on_a_landlords_mortgage_lender - 41JwnPl0fpWxEuFeIVlSdU
+  metaInfoEntry : When a tenancy is binding on a landlord's mortgage lender - 4cM8P5bFRoIWE2UPvFT7e3  courseData when_a_tenancy_is_binding_on_a_landlords_mortgage_lender - 7AOYMw75wznJXCQ0Bix7TD}
+135. pageEntry  who_is_considered_a_nondependent_when_it_comes_to_deductions_for_housing_costs - 35rOaGX3fVPrZQGLbIYvy1
+  metaInfoEntry : Who is considered a non-dependent when it comes to deductions for housing costs? - 20L4AUR5jtFPd1WIcxwciv  courseData who_is_considered_a_nondependent_when_it_comes_to_deductions_for_housing_costs - 7JxEJ5Q1qu6tBY6S0cJYur}
+136. pageEntry  private_rented_sector_harassment_and_illegal_eviction - 5si42AwNiCSo6TX8vczjsk
+  metaInfoEntry Private Rented Sector Harassment and Illegal Eviction - 2QLo9LKZPLgtgLAoWI4CF2  courseData private_rented_sector_harassment_and_illegal_eviction - i6cQbWF3KDIddHobZOlec}
+137. pageEntry  professional_boundaries - HLkEW1dRWXLE554e5frDu
+  metaInfoEntry Professional Boundaries - 1ZdWaxohUkaSmuGDC6bZjS  courseData professional_boundaries - 1PIGZut89ajXegI1cvnhFi}
+138. pageEntry  professional_writing - tADffYCiA0vvwixr9zK9A
+  metaInfoEntry Professional Writing - 4BGcu4eynL5aCtaGpd2RYX  courseData professional_writing - 2iivzEWchdcshMhplVYJJo}
+139. pageEntry  public_authorities_duty_to_refer - mcXCvglpdzzy2tOw0WNwC
+  metaInfoEntry Public Authorities Duty to Refer - PS4H1XPAZQoOBeAe1BtNb  courseData public_authorities_duty_to_refer - LwYd2TGr9JGHojVn3rGZ4}
+140. pageEntry  recognising_coercive_control - 2LsVQTms6dfXSM5vxgmxWv
+  metaInfoEntry Recognising Coercive Control - 3YCHE9CrezjVtzobmsHRsQ  courseData recognising_coercive_control - 2EM2LAIVuFLJvRbHukmDhH}
+141. pageEntry  right_to_rent_immigration_checks - 296zpw9hojOfr1O5ae8wcj
+  metaInfoEntry Right to Rent Immigration Checks - 4qHfxLKcDyMWh6dehPPnLH  courseData right_to_rent_immigration_checks - 7vNel6NZqBtqqyPjfrn6fN}
+142. pageEntry  safeguarding_for_call_handlers - 4vXhRWehtlJKj1iLdeVfQ6
+  metaInfoEntry Safeguarding for Call Handlers - 6fXYShUuXoJDwcBYS85hcQ  courseData safeguarding_for_call_handlers - 3kG02hoNy9dL2NEsWDyGly}
+143. pageEntry  safeguarding_for_housing_and_support_staff - 5Im3HME6zLPzn1LgK7GA5m
+  metaInfoEntry Safeguarding for Housing and Support Staff - 6Q1alI005rnbp3709XiZJb  courseData safeguarding_for_housing_and_support_staff - 4YqJvuoz8xn7OjUHBF7zuO}
+144. pageEntry  security_of_tenure_and_eviction - 4wLUn2gaFbtsnMRp3eb0M2
+  metaInfoEntry Security of Tenure and Eviction - 5AnLNNQ8ePJ6Oav3Jz4cXM  courseData security_of_tenure_and_eviction - 3zIkE1qO9RiJJ1b72UkwWV}
+145. pageEntry  seminar_challenging_and_making_homelessness_affordability_decisions - 729qGobY6l0iNb9BHS4at1
+  metaInfoEntry Seminar: Challenging and Making Homelessness Affordability Decisions - 1jVO9LcJ9k1628F0Lgi3EK  courseData seminar_challenging_and_making_homelessness_affordability_decisions - 5KaZnvfPFgvDX1UJfbLpLg}
+146. pageEntry  seminar_coping_with_the_energy_crisis - 4D1nasO5LmJIT5dVrCvViq
+  metaInfoEntry Seminar: Coping with the Energy Crisis - 74SCBWN6oBvYChjfTyUu3J  courseData seminar_coping_with_the_energy_crisis - 6kttEqnugyWJnoBjrCS6no}
+147. pageEntry  seminar_defending_ground_8_possession_proceedings - 2rUcL2Lt8eg3Qh6UjlpdlA
+  metaInfoEntry Seminar: Defending ground 8 possession proceedings - 2s4urv0Cycc1MudlrKEAOF  courseData seminar_defending_ground_8_possession_proceedings - 27TSfYaqJyhSEIjk0p12Ec}
+148. pageEntry  seminar_housing_advice_for_afghan_nationals - 3TSZ5f7bzzyBv0H4RvkUiS
+  metaInfoEntry Seminar: Housing Advice for Afghan Nationals - 2PDKk2iUfkO02BgBvZqtxn  courseData seminar_housing_advice_for_afghan_nationals - 3vLErQ1JXtq0CBIdRtMGHI}
+149. pageEntry  seminar_renters_reform_bill_overview_and_impact - 5lSm7iZO7ynD5zEX7RU4Lj
+  metaInfoEntry Seminar: Renters (Reform) Bill – Overview and Impact - 6VY8HILSrblZlhjnPvX3Rt  courseData seminar_renters_reform_bill_overview_and_impact - 3nwn4gSEuFBDaiV5u8vbXT}
+150. pageEntry  seminar_the_rights_of_agricultural_occupiers - 5OQ8GRUliN85KG7vbkWseH
+  metaInfoEntry Seminar: The Rights of Agricultural Occupiers - ROh9wDxs013wimw0cxBkX  courseData seminar_the_rights_of_agricultural_occupiers - 5IR9BD9qfCX9DQe0wdOabz}
+151. pageEntry  seminar_tied_accommodation_and_the_law - 5ZPjNdFOz11RHGrYUcDq7q
+  metaInfoEntry Seminar: Tied accommodation and the law - 1zHnxkjww7kJ6hLJoMQvwf  courseData seminar_tied_accommodation_and_the_law - 7lw2kL1jAl73xiOVlvqk42}
+152. pageEntry  seminar_vulnerability_in_debt_collection_and_enforcement - 6RtQ7fidjqb03zCJBYmpH8
+  metaInfoEntry Seminar: Vulnerability in Debt Collection and Enforcement - 4sch1dcHvYj0Khv6svrMD3  courseData seminar_vulnerability_in_debt_collection_and_enforcement - 2wv6PxzGxLCHys7AnWuzOR}
+153. pageEntry  skills_in_establishing_housing_and_homelessness_needs - 666l4YLZ1yZ1oelux0nj8F
+  metaInfoEntry Skills in Establishing Housing and Homelessness Needs - cI5mUejUjmoaDjx4zZJfv  courseData skills_in_establishing_housing_and_homelessness_needs - 2bQBSuTpNWxCSNctQXUpzi}
+154. pageEntry  skills_to_establish_effective_next_steps - 1cL7aB5tBvtAVxrn4sHfcU
+  metaInfoEntry Skills to Establish Effective Next Steps - 6x4VBfTENOxL78vhp2sI02  courseData skills_to_establish_effective_next_steps - 6mpeQfj74sC1cRdANILBTL}
+155. pageEntry  social_housing_allocations - 2FM4m7Ae1kygfPCulQpBQ6
+  metaInfoEntry Social Housing Allocations - 7zwHpEnEMCXxVMG1i6EBBL  courseData social_housing_allocations - 7cwYHYrOAJ2ATSyBL43cPh}
+156. pageEntry  social_housing_tenancies - 4yMjoSpy8bo0b3F8P4Ua5X
+  metaInfoEntry Social Housing Tenancies - 2219c5ZhesNeOSX9NHx50a  courseData social_housing_tenancies - gZbq7FtDkbo5VrrsekuF2}
+157. pageEntry  supervisor_and_team_leader_further_development - 4gaAYNyPj3EL0zJbtrCq3H
+  metaInfoEntry Supervisor and Team Leader – Further Development - 5mtI465xYj6R5EjKiNXxaJ  courseData supervisor_and_team_leader_further_development - Pen0wRwdcyIjljmPCD3MR}
+158. pageEntry  supervisor_and_team_leader_introduction - 1xhHLbz1sIlLdIADfaSVNQ
+  metaInfoEntry Supervisor and Team Leader – Introduction - 56clJ3Gq9GVKdE8KO0kyeU  courseData supervisor_and_team_leader_introduction - 29UyKvL8ZkNmI3cOnAAcXS}
+159. pageEntry  support_with_homeless_applications - qg7Eh8KoKupaw4RQ22xIv
+  metaInfoEntry Support with Homeless Applications - 2Nqs0UMRrH8D13MvPPilYr  courseData support_with_homeless_applications - 1IBLvILtQ19nuRBBZiqp5l}
+160. pageEntry  suspending_a_warrant - 5XZRfsGuzAxjrmPNNK8CXN
+  metaInfoEntry Suspending a Warrant - 6GYG0ica00DEDE1vBuEDrN  courseData suspending_a_warrant - 1wQ0aaKEAXgw3h0lHBvnHV}
+161. pageEntry  telephone_skills - btyBCs2q3PVX2YLI2TK0v
+  metaInfoEntry Telephone Skills - 2zyXPRUo5Ejl8BmMIup0F  courseData telephone_skills - 2B5jd2W9X2Jf0DnJcTjTqz}
+162. pageEntry  temporary_accommodation_and_the_law - 3pR7gn7QxDllukWyZPsM7n
+  metaInfoEntry Temporary Accommodation and the Law - 6iOPKI8zdqqK4oKz0SVGq6  courseData temporary_accommodation_and_the_law - 70ZB2lSXLM2wYxsHsobxA5}
+163. pageEntry  tenancy_deposits_during_and_after_asts - 6yszhjBUoiyvqNYdcjiLZH
+  metaInfoEntry Tenancy deposits - during and after ASTs - 7rt0BpAQZS8UBhavPOOI82  courseData tenancy_deposits_during_and_after_asts - gVjAp6Zs1sqydlJAVNf0V}
+164. pageEntry  tenancy_status_and_rights - 2XQ1paxqxA6l1Zfpqkvifd
+  metaInfoEntry Tenancy Status and Rights - ggR9CGdZF7xbaYUHKS9ly  courseData tenancy_status_and_rights - 5fnTXJVqTDBHH9jIotA8zp}
+165. pageEntry  the_care_act_and_housing - 6JTq7EjSX7wQ9gb4GI1GcG
+  metaInfoEntry The Care Act and Housing - 372dLqlbpLcMyciS31IiiY  courseData the_care_act_and_housing - 2E1hW6irJQojSWb0nZ2Qjd}
+166. pageEntry  the_difference_between_a_tenancy_and_licence_an_introduction - 7IhpVtP5cqrZanfjEnhPsh
+  metaInfoEntry The Difference Between a Tenancy and Licence: An Introduction - 2SHHITZ1hKKpVI2fsovnfk  courseData the_difference_between_a_tenancy_and_licence_an_introduction - JB8dG0GtGfGc2Pg9MlS6o}
+167. pageEntry  the_importance_of_identifying_housing_status - 1oBoPoM3U1NdXkE1CqTJi9
+  metaInfoEntry The Importance of Identifying Housing Status - 641OivZfZpqRbiPiByYIZ3  courseData the_importance_of_identifying_housing_status - 8ZRrUFHWXwjnXxXgh2j5m}
+168. pageEntry  the_main_housing_sectors_in_england - 1v1JfnXXJy14K9POEtXN32
+  metaInfoEntry The Main Housing Sectors in England - 5ChECjSNPhJmgQY2cJnjza  courseData the_main_housing_sectors_in_england - 45P1ZFMMrlif297mjIZgyi}
+169. pageEntry  the_mental_capacity_act_2005 - 5DHxCK9DLhRA8hTWVX9PeP
+  metaInfoEntry The Mental Capacity Act 2005 - 2YugtkWG4qPW7Ddyr6R7fa  courseData the_mental_capacity_act_2005 - 6EddT3WTIozH1dp3rDjgOi}
+170. pageEntry  the_universal_credit_migration_programme - 3Ocwp8UhT7h3wrPK1hc18Y
+  metaInfoEntry The Universal Credit Migration Programme - 6uD31Wu8TBNFNSRiFckCCf  courseData the_universal_credit_migration_programme - 36zoD4ITcd7lhKrW1nOtmY}
+171. pageEntry  time_management - 5nRxwAfjIqNE0nhbAD2NU8
+  metaInfoEntry Time Management - 2CxU1Sz8m8I90bmP3CGKq  courseData time_management - 11e6sFghuCQlgwuVxV5D4l}
+172. pageEntry  training_for_trainers - 1Bl1VYxTU4IuS7NzWjIPQN
+  metaInfoEntry Training for Trainers - uhnXHCAUdCg9EcOqs03rX  courseData training_for_trainers - 5QlqLPOavawKm17MxmPDbW}
+173. pageEntry  transferring_a_tenancy_issues_to_consider - 1VQ2Vx5PHJ35b4ifuPHM0N
+  metaInfoEntry Transferring a Tenancy: Issues to Consider - 6EbNFtQfBrepIfedAKFHLm  courseData transferring_a_tenancy_issues_to_consider - 6VgFI1xx3ZiFWBnDXMhbYG}
+174. pageEntry  understanding_and_supporting_homeless_women - YVGfFtieMA1nfMtR4fFA7
+  metaInfoEntry Understanding and Supporting Homeless Women - 71XpkoAVA21noYsRTbZxI4  courseData understanding_and_supporting_homeless_women - 2NDFR8A98GdJKUGUK1Lorb}
+175. pageEntry  understanding_homelessness_vulnerability - 1qQLGqJq0Re20VgVfO5Z6C
+  metaInfoEntry Understanding Homelessness Vulnerability - 2ELiKmeSbfFXkSFnvwXnbH  courseData understanding_homelessness_vulnerability - 3gwORDAJLzcB3mDNc9Mayt}
+176. pageEntry  understanding_statutory_overcrowding - 7Als66E24L2YWZbJOPUDEA
+  metaInfoEntry Understanding Statutory Overcrowding - 3KzD5G3SdkOMxTD7ioh13K  courseData understanding_statutory_overcrowding - 7ypZh4axd1SK6gK17REROU}
+177. pageEntry  understanding_suitability_of_accommodation - aRQplRJ1Z7KxNDnIAaqaQ
+  metaInfoEntry Understanding Suitability of Accommodation - 2KWXCWcc2jvIX3LJ4FPOTo  courseData understanding_suitability_of_accommodation - 7D1kCVHfWM6QBZc5t9DEdV}
+178. pageEntry  understanding_tenancy_deposits - 1bHvk6OXgSXAQIPzLzWgik
+  metaInfoEntry Understanding Tenancy Deposits - 35h5G2LEWPJyn20WEpPJBq  courseData understanding_tenancy_deposits - 17XKLAA9XkxDnvNUC9GoI0}
+179. pageEntry  understanding_the_public_sector_equality_duty_homelessness_and_housing - 6oDB7OYgWZPeS643wgQ1R3
+  metaInfoEntry Understanding the Public Sector Equality Duty: Homelessness and Housing - 3EDoro2eiDN01CLsjpws0H  courseData understanding_the_public_sector_equality_duty_homelessness_and_housing - 7g79I8KLvIkGkU4xudtb2u}
+180. pageEntry  universal_credit_overview - 3P242Wu1WBPA0kKzJU2SsE
+  metaInfoEntry Universal Credit Overview - 3hSBCQCvcK1F00Pi13WeVj  courseData universal_credit_overview - 5e8EXtLJjzmGEHDGjRjDJe}
+181. pageEntry  using_reflective_practice - 26BoxiDmekhczUUYoV20nG
+  metaInfoEntry Using Reflective Practice - 6xHwtpQW8Q2CgDN3oWlW1s  courseData using_reflective_practice - 34BqOv7OSYN4QZqpIPQNSM}
+182. pageEntry  welfare_benefits_for_older_people - 5i4zr3qG6Vjin66wTzgYoi
+  metaInfoEntry Welfare Benefits for Older People - 6UqVxOJPUoPme9amyDHlxg  courseData welfare_benefits_for_older_people - 6j6oli3sJKIWkCByLQI4pR}
+183. pageEntry  welfare_benefits_overview - 4DeIs9somJIeE8MXIIIQxJ
+  metaInfoEntry Welfare Benefits Overview - 6gUV9ef7jQXiDcAbOjynK2  courseData welfare_benefits_overview - Izs3QjpEvWHnJGgs9DEWi}
+184. pageEntry  welfare_benefits_update - 5viWRzpYM0ggFNAw9sfaKH
+  metaInfoEntry Welfare Benefits Update - 6v3wkDtCroLT2CoB0AJkjS  courseData welfare_benefits_update - 1XSOaAUrGtoygIxCeAZyuQ}
+185. pageEntry  writing_homelessness_decision_letters - 6SYiAdbFYGS9YPqJaYDGHY
+  metaInfoEntry Writing Homelessness Decision Letters - 4VogaGGbOoKpq2lwuruwSt  courseData writing_homelessness_decision_letters - 1nOpVUJ9IAev79LbsFQYCU}
+186. pageEntry  young_people_and_accommodation - 1kXYXGelGAf2UvZOELzVKR
+  metaInfoEntry Young People and Accommodation - 939B0yqhKMvYVnKzQOxlT  courseData young_people_and_accommodation - 5TgtXquB1DbqMi4WebcZId}

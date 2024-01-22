@@ -1,5 +1,6 @@
 // Probably no need to keep this script but it's handy in development
 const contentful = require("contentful-management");
+const readlineSync = require("readline-sync");
 require("dotenv").config();
 
 const CONTENTFUL_MANAGEMENT_TOKEN = process.env.CONTENTFUL_MANAGEMENT_TOKEN;
@@ -18,7 +19,31 @@ const META_INFO_TYPE = "topicPageMetaInformation";
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+
+const promptEnvironment = () => {
+
+  if(CONTENTFUL_ENVIRONMENT === 'master') {
+    console.error('Running this on master env is not advised. All topicPageMetaInformation entries will be deleted - not just those related to courses.')
+    return;
+  }
+
+  const userEnvironment = readlineSync.question(
+    `All topicPageMetaInformation entries will be deleted - not just those related to courses. Current CONTENTFUL_ENVIRONMENT value is "${CONTENTFUL_ENVIRONMENT}". Is this ok? (Y/N): `
+  );
+
+  if (userEnvironment.toUpperCase() !== "Y") {
+    console.log(
+      "Please update the CONTENTFUL_ENVIRONMENT value in the script before proceeding."
+    );
+    process.exit(1);
+  }
+};
+
+
 const deleteDraftCourseEntries = async () => {
+
+  promptEnvironment();
+
   const client = contentful.createClient({
     accessToken: CONTENTFUL_MANAGEMENT_TOKEN,
   });
