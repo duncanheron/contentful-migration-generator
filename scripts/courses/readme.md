@@ -20,3 +20,5 @@ CONTENTFUL_ENVIRONMENT
 1. Run the `website-assets` repo at `locahost:8000` with `yarn develop`
 2. Run this script: from within the courses folder `node createCourseEntries.js`
  
+ ## IPv6 vs IPv4 endpoint
+ My understanding of this is limited but I had to change the URL to `http://[::1]:8000/__graphql/` rather than `http://localhost:8000/__graphql/` to get this script to run on MacOS 14. Using `localhost` resulted in a `Error: connect ECONNREFUSED 127.0.0.1:8000` error

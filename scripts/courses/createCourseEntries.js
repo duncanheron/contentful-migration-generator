@@ -8,7 +8,7 @@ const CONTENTFUL_ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT;
 const PAGE_CONTENT_TYPE = "pageCourse";
 const DATA_CONTENT_TYPE = "dataCourse";
 const META_INFO_TYPE = "topicPageMetaInformation";
-const GRAPHQL_ENDPOINT = "http://localhost:8000/___graphql";
+const GRAPHQL_ENDPOINT = "http://[::1]:8000/___graphql"; // try `http://localhost:8000/___graphql` if this gives a `ECONNREFUSED` error - see readme
 
 let environment;
 
