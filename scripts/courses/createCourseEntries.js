@@ -235,12 +235,11 @@ const createEntries = async (courses) => {
           };
         }
 
-        pageEntryCount++;
         // Log the update to the text file
         const logData =
           `${pageEntryCount}. pageEntry  ${pageEntry.fields.slug["en-GB"]} - ${pageEntry.sys.id}\n` +
           `        metaInfoEntry ${metaInfoEntry.fields.systemName["en-GB"]} - ${metaInfoEntry.sys.id}\n` +
-          `        courseData ${dataEntry.fields.templateIdString["en-GB"]} - ${dataEntry.sys.id}}`;
+          `        courseData ${dataEntry.fields.templateIdString["en-GB"]} - ${dataEntry.sys.id}`;
         writeToLogFile(logData);
 
         await pageEntry.update();
